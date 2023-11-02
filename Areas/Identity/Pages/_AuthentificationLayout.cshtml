@@ -1,13 +1,44 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-</head>
-<body>
-    <div>
-        @RenderBody()
+<div class="row justify-content-center">
+    <div class="col-5 mt-5">
+        <div class="card login-logout-card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Login">
+                            Se connecter
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Identity/Account/Register">
+                            Créer un nouveau compte
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="col-10 my-4">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
     </div>
-</body>
-</html>
+</div>
+
+@section Scripts{
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        $(function () {
+            const pageActuelle = location.pathname;
+            $('.nav-tabs li a').each(function () {
+                const $this = $(this);
+                if (pageActuelle.toLowerCase().indexOf($this.attr('href').toLowerCase()) != -1{
+                    $this.addClass('active');
+                }
+            })
+        })
+    </script>
+}
