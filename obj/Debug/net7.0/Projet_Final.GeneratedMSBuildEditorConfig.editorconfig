@@ -9,165 +9,165 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Projet_Final
 build_property.RootNamespace = Projet_Final
-build_property.ProjectDir = C:\Users\Nicolas Lazarte\ProjetWeb3\Projet_Final\
+build_property.ProjectDir = C:\Users\Nicolas Lazarte\Projet_Final\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Nicolas Lazarte\ProjetWeb3\Projet_Final
+build_property.MSBuildProjectDirectory = C:\Users\Nicolas Lazarte\Projet_Final
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/_AuthentificationLayout.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/_AuthentificationLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX0F1dGhlbnRpZmljYXRpb25MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Clients/Create.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Clients/Delete.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Clients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Clients/Details.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Clients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Clients/Edit.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Clients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Clients/Index.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Home/Index.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Home/Privacy.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Reservations/Create.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Reservations/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Reservations/Delete.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Reservations/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Reservations/Details.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Reservations/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Reservations/Edit.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Reservations/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Reservations/Index.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Reservations/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Shared/Error.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Voitures/Create.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Voitures/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Voitures/Delete.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Voitures/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Voitures/Details.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Voitures/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Voitures/Edit.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Voitures/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Voitures/Index.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Voitures/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9pdHVyZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/_ViewImports.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/_ViewStart.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nicolas Lazarte/ProjetWeb3/Projet_Final/Views/Shared/_Layout.cshtml]
+[C:/Users/Nicolas Lazarte/Projet_Final/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-t1uulajyb6
