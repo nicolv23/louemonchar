@@ -11626,11 +11626,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicolas Lazarte\\ProjetWeb3\\Projet_Final\\Projet_Final.csproj",
+      "projectUniqueName": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\Projet_Final.csproj",
       "projectName": "Projet_Final",
-      "projectPath": "C:\\Users\\Nicolas Lazarte\\ProjetWeb3\\Projet_Final\\Projet_Final.csproj",
+      "projectPath": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\Projet_Final.csproj",
       "packagesPath": "C:\\Users\\Nicolas Lazarte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nicolas Lazarte\\ProjetWeb3\\Projet_Final\\obj\\",
+      "outputPath": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
