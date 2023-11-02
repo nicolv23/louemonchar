@@ -1,0 +1,48 @@
+﻿@model Projet_Final.Models.Voiture
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Voiture</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Marque)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Marque)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Modèle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Modèle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Année)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Année)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrixJournalier)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrixJournalier)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EstDisponible)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EstDisponible)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
