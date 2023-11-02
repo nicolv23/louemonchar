@@ -1,0 +1,53 @@
+﻿@model Projet_Final.Models.Voiture
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Voiture</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Marque" class="control-label"></label>
+                <input asp-for="Marque" class="form-control" />
+                <span asp-validation-for="Marque" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Modèle" class="control-label"></label>
+                <input asp-for="Modèle" class="form-control" />
+                <span asp-validation-for="Modèle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Année" class="control-label"></label>
+                <input asp-for="Année" class="form-control" />
+                <span asp-validation-for="Année" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrixJournalier" class="control-label"></label>
+                <input asp-for="PrixJournalier" class="form-control" />
+                <span asp-validation-for="PrixJournalier" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="EstDisponible" /> @Html.DisplayNameFor(model => model.EstDisponible)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
