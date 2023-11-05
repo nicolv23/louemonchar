@@ -73,12 +73,12 @@ namespace Projet_Final.Areas.Identity.Pages.Account
         {
          
             [DataType(DataType.Text)]
-            [Display(Name = "Prenom")]
+            [Display(Name = "First Name")]
             public string FirstName { get; set; }
 
           
             [DataType(DataType.Text)]
-            [Display(Name = "Nom")]
+            [Display(Name = "Last Name")]
             public string LastName { get; set; }
 
             /// <summary>
