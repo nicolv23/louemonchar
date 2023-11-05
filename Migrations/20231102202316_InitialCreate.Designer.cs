@@ -12,7 +12,7 @@ using Projet_Final.Areas.Identity.Data;
 namespace Projet_Final.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231102023902_InitialCreate")]
+    [Migration("20231102202316_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -180,6 +180,14 @@ namespace Projet_Final.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");

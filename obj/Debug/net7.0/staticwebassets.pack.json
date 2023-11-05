@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\js\\messagerie.js",
+      "PackagePath": "staticwebassets\\js\\messagerie.js"
+    },
+    {
+      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js"
+    },
+    {
       "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
