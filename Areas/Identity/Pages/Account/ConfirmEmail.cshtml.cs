@@ -1,52 +1,85 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
-// The .NET Foundation licenses this file to you under the MIT license.
-#nullable disable
-
-using System;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Projet_Final.Areas.Identity.Data;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.WebUtilities;
-using Projet_Final.Areas.Identity.Data;
 
 namespace Projet_Final.Areas.Identity.Pages.Account
 {
     public class ConfirmEmailModel : PageModel
     {
+        private readonly IConfiguration _configuration;
         private readonly UserManager<ApplicationUtilisateur> _userManager;
+        private readonly ILogger<ConfirmEmailModel> _logger;
 
-        public ConfirmEmailModel(UserManager<ApplicationUtilisateur> userManager)
+        public ConfirmEmailModel(IConfiguration configuration, UserManager<ApplicationUtilisateur> userManager, ILogger<ConfirmEmailModel> logger)
         {
+            _configuration = configuration;
             _userManager = userManager;
+            _logger = logger;
         }
 
-        /// <summary>
-        ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
-        ///     directly from your code. This API may change or be removed in future releases.
-        /// </summary>
-        [TempData]
-        public string StatusMessage { get; set; }
         public async Task<IActionResult> OnGetAsync(string userId, string code)
         {
+            var emailSettings = _configuration.GetSection("EmailSettings");
+            var smtpServer = emailSettings["SmtpServer"];
+            var port = int.Parse(emailSettings["Port"]);
+            var userName = emailSettings["UserName"];
+            var password = emailSettings["Password"];
+            var senderEmail = emailSettings["SenderEmail"];
+            var senderName = emailSettings["SenderName"];
+
             if (userId == null || code == null)
             {
-                return RedirectToPage("/Index");
+                return NotFound();
             }
 
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{userId}'.");
+                return NotFound();
             }
 
             code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(code));
             var result = await _userManager.ConfirmEmailAsync(user, code);
-            StatusMessage = result.Succeeded ? "Thank you for confirming your email." : "Error confirming your email.";
-            return Page();
+
+            if (result.Succeeded)
+            {
+                _logger.LogInformation("User confirmed email successfully.");
+
+                // Envoi de l'email de confirmation
+                using (var client = new SmtpClient(smtpServer))
+                {
+                    client.Port = port;
+                    client.UseDefaultCredentials = false;
+                    client.Credentials = new NetworkCredential(userName, password);
+                    client.EnableSsl = true;
+
+                    var mailMessage = new MailMessage
+                    {
+                        From = new MailAddress(senderEmail, senderName),
+                        Subject = "Confirmation d'email",
+                        Body = "Merci d'avoir confirmé votre email."
+                    };
+
+                    mailMessage.To.Add(user.Email);
+
+                    client.Send(mailMessage);
+                }
+
+                return RedirectToPage("/Index"); // Redirigez vers la page d'accueil ou une autre page après confirmation.
+            }
+            else
+            {
+                _logger.LogError("Error confirming email.");
+                return Page(); // Affichez un message d'erreur sur la page de confirmation d'email.
+            }
         }
     }
 }
