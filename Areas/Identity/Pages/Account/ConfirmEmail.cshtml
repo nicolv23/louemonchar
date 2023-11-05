@@ -5,4 +5,11 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-<partial name="_StatusMessage" model="Model.StatusMessage" />
+<div>
+    <p>Merci d'avoir confirmé votre email.</p>
+    <p>Si vous n'êtes pas automatiquement redirigé, veuillez <a href="~/">cliquez ici</a> pour retourner à la page d'accueil.</p>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
