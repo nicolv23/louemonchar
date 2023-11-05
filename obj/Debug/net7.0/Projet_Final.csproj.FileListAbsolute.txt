@@ -533,6 +533,7 @@ C:\Users\Nicolas Lazarte\Projet_Final\obj\Debug\net7.0\Projet_Final.RazorAssembl
 C:\Users\Nicolas Lazarte\Projet_Final\obj\Debug\net7.0\Projet_Final.RazorAssemblyInfo.cs
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\appsettings.json
+C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\libman.json
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\Projet_Final.staticwebassets.runtime.json
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\Projet_Final.exe
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\Projet_Final.deps.json
@@ -612,6 +613,7 @@ C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\System.Configuration.Conf
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\System.Runtime.Caching.dll
 C:\Users\Nicolas Lazarte\Projet_Final\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
