@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Projet_Final.Areas.Identity.Data;
 using Projet_Final.Hubs;
 using Projet_Final.Models;
+using Projet_Final.Services;
+using Projet_Final.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
@@ -11,6 +13,16 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
 builder.Services.AddDefaultIdentity<ApplicationUtilisateur>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+builder.Services.Configure<TwilioSettings>(builder.Configuration.GetSection("TwilioSettings"));
+builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+{
+    googleOptions.ClientId = builder.Configuration.GetSection("GoogleAuthSettings")
+    .GetValue<string>("ClientId");
+    googleOptions.ClientSecret = builder.Configuration.GetSection("GoogleAuthSettings")
+    .GetValue<string>("ClientSecret");
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -23,6 +35,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 });
 
 builder.Services.AddSingleton<TestData>();
+builder.Services.AddScoped<ISMSSenderService, SMSSenderService>();
 
 var app = builder.Build();
 
