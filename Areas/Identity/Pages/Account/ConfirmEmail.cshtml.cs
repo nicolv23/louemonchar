@@ -9,6 +9,8 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
 
 namespace Projet_Final.Areas.Identity.Pages.Account
 {
@@ -29,7 +31,15 @@ namespace Projet_Final.Areas.Identity.Pages.Account
         {
             var emailSettings = _configuration.GetSection("EmailSettings");
             var smtpServer = emailSettings["SmtpServer"];
-            var port = int.Parse(emailSettings["Port"]);
+            // Vérification et récupération de la valeur du port avec une gestion d'erreur
+            var portValue = emailSettings["Port"];
+            int port;
+            if (!int.TryParse(portValue, out port))
+            {
+                // Gérer l'erreur si la valeur du port n'est pas valide
+                // Par exemple, retourner une vue avec un message d'erreur
+                return Content("Erreur de configuration du port SMTP");
+            }
             var userName = emailSettings["UserName"];
             var password = emailSettings["Password"];
             var senderEmail = emailSettings["SenderEmail"];
@@ -53,27 +63,22 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             {
                 _logger.LogInformation("User confirmed email successfully.");
 
-                // Envoi de l'email de confirmation
-                using (var client = new SmtpClient(smtpServer))
-                {
-                    client.Port = port;
-                    client.UseDefaultCredentials = false;
-                    client.Credentials = new NetworkCredential(userName, password);
-                    client.EnableSsl = true;
+                // Envoi du SMS de confirmation via Twilio
+                var twilioSettings = _configuration.GetSection("TwilioSettings");
+                var accountSid = twilioSettings["AccountSId"];
+                var authToken = twilioSettings["AuthToken"];
+                var fromPhoneNumber = twilioSettings["FromPhoneNumber"];
 
-                    var mailMessage = new MailMessage
-                    {
-                        From = new MailAddress(senderEmail, senderName),
-                        Subject = "Confirmation d'email",
-                        Body = "Merci d'avoir confirmé votre email."
-                    };
+                TwilioClient.Init(accountSid, authToken);
 
-                    mailMessage.To.Add(user.Email);
+                var message = MessageResource.Create(
+                    body: "Merci d'avoir confirmé votre email.",
+                    from: new Twilio.Types.PhoneNumber(fromPhoneNumber),
+                    to: new Twilio.Types.PhoneNumber(user.PhoneNumber) // Assurez-vous que le numéro de téléphone est correctement récupéré depuis l'utilisateur
+                );
 
-                    client.Send(mailMessage);
-                }
-
-                return RedirectToPage("/Index"); // Redirigez vers la page d'accueil ou une autre page après confirmation.
+                // Redirection vers la page d'accueil ou une autre page après confirmation
+                return RedirectToPage("/Index");
             }
             else
             {

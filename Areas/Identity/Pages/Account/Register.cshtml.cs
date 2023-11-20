@@ -73,12 +73,12 @@ namespace Projet_Final.Areas.Identity.Pages.Account
         {
          
             [DataType(DataType.Text)]
-            [Display(Name = "First Name")]
+            [Display(Name = "Prénom")]
             public string FirstName { get; set; }
 
           
             [DataType(DataType.Text)]
-            [Display(Name = "Last Name")]
+            [Display(Name = "Nom de famille")]
             public string LastName { get; set; }
 
             /// <summary>
@@ -90,6 +90,11 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
+            [Required]
+            [Phone]
+            [Display(Name = "Numéro de téléphone")]
+            public string Telephone { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -97,7 +102,7 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "Mot de passe")]
             public string Password { get; set; }
 
             /// <summary>
@@ -105,7 +110,7 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
+            [Display(Name = "Confirmer mot de passe")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
         }
@@ -126,22 +131,34 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             {
                 var user = CreateUser();
 
-                // As the user is signing up through Google, the first and last name might not be available.
-                // Set FirstName and LastName as empty strings or any default values.
-                user.FirstName = string.Empty;
-                user.LastName = string.Empty;
+                // Set other user properties (FirstName, LastName, Email)
+                user.FirstName = Input.FirstName;
+                user.LastName = Input.LastName;
+                user.Email = Input.Email;
 
-                // Set the provided email to the user's email.
+                // Set the provided email and phone number to the user
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+                await _userManager.SetPhoneNumberAsync(user, Input.Telephone);
 
-                // Sign in the user or add necessary steps for account confirmation if needed.
-                // (Your remaining code for user creation and sign-in)
+                // Create the user in the database
+                var result = await _userManager.CreateAsync(user, Input.Password);
+                if (result.Succeeded)
+                {
+                    TempData["SuccessMessage"] = "Votre compte a été créé avec succès. Veuillez confirmer votre email pour activer votre compte.";
+                    return RedirectToPage("/RegisterConfirmation", new { email = user.Email, returnUrl });
+                }
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
             }
 
             // If we got this far, something failed, redisplay the form
             return Page();
         }
+
+
 
         private ApplicationUtilisateur CreateUser()
         {
