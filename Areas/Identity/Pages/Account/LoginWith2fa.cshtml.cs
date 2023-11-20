@@ -17,14 +17,14 @@ namespace Projet_Final.Areas.Identity.Pages.Account
         private readonly SignInManager<ApplicationUtilisateur> _signInManager;
         private readonly UserManager<ApplicationUtilisateur> _userManager;
         private readonly ILogger<LoginWith2faModel> _logger;
-        private readonly IEmailSender _emailSender;
+        private readonly Microsoft.AspNetCore.Identity.UI.Services.IEmailSender _emailSender;
         private readonly ISMSSenderService _sMSSenderService; // Ajouter le service ISMSSenderService ici
 
         public LoginWith2faModel(
             SignInManager<ApplicationUtilisateur> signInManager,
             UserManager<ApplicationUtilisateur> userManager,
             ILogger<LoginWith2faModel> logger,
-            IEmailSender emailSender,
+            Microsoft.AspNetCore.Identity.UI.Services.IEmailSender emailSender,
             ISMSSenderService sMSSenderService) // Ajouter ISMSSenderService dans le constructeur
         {
             _signInManager = signInManager;
