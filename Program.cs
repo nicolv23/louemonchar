@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Projet_Final.Areas.Identity.Data;
 using Projet_Final.Hubs;
 using Projet_Final.Models;
 using Projet_Final.Services;
 using Projet_Final.Settings;
+using SendGrid.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
@@ -14,7 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddDefaultIdentity<ApplicationUtilisateur>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-
+builder.Services.Configure<SendGridSettings>(builder.Configuration.GetSection("SendGridSettings"));
 builder.Services.Configure<TwilioSettings>(builder.Configuration.GetSection("TwilioSettings"));
 builder.Services.AddAuthentication().AddGoogle(googleOptions =>
 {
@@ -35,6 +37,11 @@ builder.Services.Configure<IdentityOptions>(options =>
 });
 
 builder.Services.AddSingleton<TestData>();
+builder.Services.AddSendGrid(options => {
+    options.ApiKey = builder.Configuration.GetSection("SendGridSettings")
+    .GetValue<string>("ApiKey");
+});
+builder.Services.AddScoped<IEmailSender, EmailSenderService>();
 builder.Services.AddScoped<ISMSSenderService, SMSSenderService>();
 
 var app = builder.Build();
@@ -68,13 +75,5 @@ using (var scope = app.Services.CreateScope())
     var dbContext = services.GetRequiredService<ApplicationDbContext>();
     ApplicationDbContext.SeedData(dbContext);
 }
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapHub<ChatHub>("/chatHub");
-    endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
-});
 
 app.Run();
