@@ -53,12 +53,22 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             public string TwoFactAuthProviderName { get; set; }
         }
 
+        //Ce méthode est utilisé pour envoyer des jetons à deux facteurs
+        //à l'utilisateur en fonction
+        //du fournisseur d'authentification disponible (téléphone ou e-mail)
+        //et de la demande de l'utilisateur.
         public async Task<IActionResult> OnGetAsync(bool rememberMe, string returnUrl = null)
         {
-            var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
+            var user = await _signInManager.UserManager.GetUserAsync(User);
             if (user == null)
             {
-                throw new InvalidOperationException($"Unable to load two-factor authentication user.");
+                return RedirectToPage("./Login", new { returnUrl });
+            }
+
+            var isTwoFactorAuthenticated = await _signInManager.GetTwoFactorAuthenticationUserAsync();
+            if (isTwoFactorAuthenticated == null)
+            {
+                throw new InvalidOperationException($"Impossible de charger l'utilisateur d'authentification à deux facteurs.");
             }
 
             var providers = await _userManager.GetValidTwoFactorProvidersAsync(user);
@@ -68,60 +78,71 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             {
                 Input.TwoFactAuthProviderName = "Phone";
                 var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Phone");
-                // Envoyer le token par SMS à l'utilisateur via _sMSSenderService
-                await _sMSSenderService.SendSmsAsync(user.PhoneNumber, $"OTP Code: {token}");
+                // Envoie le code par SMS
+                await _sMSSenderService.SendSmsAsync(user.PhoneNumber, $"Votre code de vérification: {token}");
             }
             else if (providers.Any(_ => _ == "Email"))
             {
                 Input.TwoFactAuthProviderName = "Email";
                 var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
-                // Envoyer le token par e-mail à l'utilisateur via _emailSender
-                await _emailSender.SendEmailAsync(user.Email, "2FA Code", $"<h3>{token}</h3>.");
+                // Envoie le code par e-mail
+                await _emailSender.SendEmailAsync(user.Email, "Code de vérification à deux facteurs", $"<h3>Votre code de vérification: {token}</h3>.");
             }
             else
             {
-                throw new InvalidOperationException($"Unable to load two-factor authentication user.");
+                throw new InvalidOperationException($"Impossible de charger l'utilisateur d'authentification à deux facteurs.");
             }
 
             ReturnUrl = returnUrl;
             RememberMe = rememberMe;
+
             return Page();
         }
 
+        // Cette méthode fait partie d'une action de gestion
+        // d'une page web (une page d'authentification à deux facteurs)
         public async Task<IActionResult> OnPostAsync(bool rememberMe, string returnUrl = null)
         {
+            // Vérifie si le modèle (ModelState) est valide, c'est-à-dire s'il n'y a pas d'erreurs de validation
             if (!ModelState.IsValid)
             {
-                return Page();
+                return Page(); // Recharge la page actuelle si des erreurs de validation sont détectées
             }
-
+            // Si returnUrl est nul, le remplace par l'URL par défaut
             returnUrl = returnUrl ?? Url.Content("~/");
+            // Récupère l'utilisateur qui a passé par l'authentification à deux facteurs
             var user = await _signInManager.GetTwoFactorAuthenticationUserAsync();
             if (user == null)
             {
-                throw new InvalidOperationException($"Unable to load two-factor authentication user.");
+                throw new InvalidOperationException($"Impossible de charger l'utilisateur d'authentification à deux facteurs.");
             }
-
+            // Récupère le code d'authentification à deux facteurs de l'entrée (Input) en supprimant les espaces et les tirets
             var authenticatorCode = Input.TwoFactorCode.Replace(" ", string.Empty).Replace("-", string.Empty);
+            // Tente de valider le code d'authentification à deux facteurs en utilisant le gestionnaire d'authentification
             var result = await _signInManager.TwoFactorSignInAsync(Input.TwoFactAuthProviderName, authenticatorCode, rememberMe, Input.RememberMachine);
+            // Récupère l'ID de l'utilisateur
             var userId = await _userManager.GetUserIdAsync(user);
-
             if (result.Succeeded)
             {
-                _logger.LogInformation("User with ID '{UserId}' logged in with 2FA.", user.Id);
+                // L'authentification à deux facteurs a réussi, enregistre un message de journalisation
+                _logger.LogInformation("L'utilisateur avec l'ID '{UserId}' s'est connecté avec 2FA.", user.Id);
+                // Redirige l'utilisateur vers l'URL de retour spécifiée
                 return LocalRedirect(returnUrl);
             }
             else if (result.IsLockedOut)
             {
-                _logger.LogWarning("User with ID '{UserId}' account locked out.", user.Id);
+                // Le compte de l'utilisateur est verrouillé, enregistre un message de journalisation
+                _logger.LogWarning("Le compte de l'utilisateur avec l'ID '{UserId}' est verrouillé.", user.Id);
+                // Redirige l'utilisateur vers une page de verrouillage de compte
                 return RedirectToPage("./Lockout");
             }
             else
             {
-                _logger.LogWarning("Invalid authenticator code entered for user with ID '{UserId}'.", user.Id);
-            }
+                // Le code d'authentification à deux facteurs est incorrect, enregistre un message de journalisation
+                _logger.LogWarning("Code d'authentification incorrect pour l'utilisateur avec l'ID '{UserId}'.", user.Id);
 
-            return Page();
+                return Page();
+            }
         }
     }
 }
