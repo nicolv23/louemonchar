@@ -6,7 +6,10 @@ using Projet_Final.Hubs;
 using Projet_Final.Models;
 using Projet_Final.Services;
 using Projet_Final.Settings;
+using SendGrid;
 using SendGrid.Extensions.DependencyInjection;
+using SendGrid.Helpers.Mail;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
@@ -42,6 +45,7 @@ builder.Services.AddSendGrid(options => {
     .GetValue<string>("ApiKey");
 });
 builder.Services.AddScoped<IEmailSender, EmailSenderService>();
+builder.Services.AddTransient<IEmailSender, EmailSenderService>();
 builder.Services.AddScoped<ISMSSenderService, SMSSenderService>();
 
 var app = builder.Build();
