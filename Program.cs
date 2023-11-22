@@ -16,14 +16,24 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddDefaultIdentity<ApplicationUtilisateur>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
+//External LogIn
 builder.Services.Configure<SendGridSettings>(builder.Configuration.GetSection("SendGridSettings"));
 builder.Services.Configure<TwilioSettings>(builder.Configuration.GetSection("TwilioSettings"));
+
+//Google
 builder.Services.AddAuthentication().AddGoogle(googleOptions =>
 {
     googleOptions.ClientId = builder.Configuration.GetSection("GoogleAuthSettings")
     .GetValue<string>("ClientId");
     googleOptions.ClientSecret = builder.Configuration.GetSection("GoogleAuthSettings")
     .GetValue<string>("ClientSecret");
+});
+
+//Facebook
+builder.Services.AddAuthentication().AddFacebook(opt =>
+{
+    opt.ClientId = "2128729867488511";
+    opt.ClientSecret = "97a00ea7a960dd8643398adc88f5833b";
 });
 
 // Add services to the container.
