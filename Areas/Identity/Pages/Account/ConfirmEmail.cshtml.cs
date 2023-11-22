@@ -29,10 +29,10 @@ namespace Projet_Final.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnGetAsync(string userId, string code)
         {
-            var emailSettings = _configuration.GetSection("EmailSettings");
-            var smtpServer = emailSettings["SmtpServer"];
+            var sendGridSettings = _configuration.GetSection("SendGridSettings");
+            var smtpServer = sendGridSettings["SmtpServer"];
             // Vérification et récupération de la valeur du port avec une gestion d'erreur
-            var portValue = emailSettings["Port"];
+            var portValue = sendGridSettings["Port"];
             int port;
             if (!int.TryParse(portValue, out port))
             {
@@ -40,10 +40,10 @@ namespace Projet_Final.Areas.Identity.Pages.Account
                 // Par exemple, retourner une vue avec un message d'erreur
                 return Content("Erreur de configuration du port SMTP");
             }
-            var userName = emailSettings["UserName"];
-            var password = emailSettings["Password"];
-            var senderEmail = emailSettings["SenderEmail"];
-            var senderName = emailSettings["SenderName"];
+            var userName = sendGridSettings["UserName"];
+            var password = sendGridSettings["Password"];
+            var senderEmail = sendGridSettings["SenderEmail"];
+            var senderName = sendGridSettings["SenderName"];
 
             if (userId == null || code == null)
             {
@@ -74,8 +74,10 @@ namespace Projet_Final.Areas.Identity.Pages.Account
                 var message = MessageResource.Create(
                     body: "Merci d'avoir confirmé votre email.",
                     from: new Twilio.Types.PhoneNumber(fromPhoneNumber),
-                    to: new Twilio.Types.PhoneNumber(user.PhoneNumber) // Assurez-vous que le numéro de téléphone est correctement récupéré depuis l'utilisateur
-                );
+                    to: new Twilio.Types.PhoneNumber(user.PhoneNumber));
+
+                Console.WriteLine($"Twilio Message SID: {message.Sid}");
+                Console.WriteLine($"Twilio Message Error Message: {message.ErrorMessage}");
 
                 // Redirection vers la page d'accueil ou une autre page après confirmation
                 return RedirectToPage("/Index");

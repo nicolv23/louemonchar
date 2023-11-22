@@ -23,9 +23,15 @@
                     </div>
                     <div class="col-12">
                         <div class="form-floating mb-3">
-                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                            <label asp-for="Input.Password" class="form-label">Password</label>
+                            <input asp-for="Input.Password" id="password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                            <label asp-for="Input.Password">Mot de Passe</label>
                             <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="togglePasswordVisibility('password')">
+                                <label class="form-check-label" for="showPassword">
+                                    Afficher le mot de passe
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12">
@@ -43,28 +49,25 @@
                         <a id="forgot-password" asp-page="./ForgotPassword">Mot de passe oublié</a>
                     </p>
                     <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Se créer un nouveau compte</a>
-                    </p>
-                    <p>
                         <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Envoyez une confirmation d'email</a>
                     </p>
                 </div>
             </form>
         </div>
 
-        <!-- Use Another Service to Login -->
+        <!-- Authentification externe (Google et Facebook) -->
         <div class="col-md-6">
             <section>
-                <h3>Use another service to log in.</h3>
+                <h3>Utiliser un autre service pour se connecter.</h3>
                 <hr />
                 @{
                     if ((Model.ExternalLogins?.Count ?? 0) == 0)
                     {
                         <div>
                             <p>
-                                There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">
+                                Aucun service d'authentification externe n'est configuré. Voir ceci <a href="https://go.microsoft.com/fwlink/?LinkID=532715">
                                     article
-                                    about setting up this ASP.NET application to support logging in via external services
+                                    sur la configuration de cette application ASP.NET pour prendre en charge la connexion via des services externes
                                 </a>.
                             </p>
                         </div>
@@ -90,4 +93,17 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        // Fonction pour basculer entre le type password et text
+        function togglePasswordVisibility(inputId) {
+            const passwordField = document.getElementById(inputId);
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+    </script>
 }
+
