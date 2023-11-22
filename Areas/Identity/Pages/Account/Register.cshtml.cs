@@ -90,7 +90,6 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
             [Phone]
             [Display(Name = "Numéro de téléphone")]
             public string Telephone { get; set; }
@@ -129,34 +128,44 @@ namespace Projet_Final.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                var user = CreateUser();
+                var user = new ApplicationUtilisateur
+                {
+                    FirstName = Input.FirstName,
+                    LastName = Input.LastName,
+                    UserName = Input.Email,
+                    Email = Input.Email
+                };
 
-                // Set other user properties (FirstName, LastName, Email)
-                user.FirstName = Input.FirstName;
-                user.LastName = Input.LastName;
-                user.Email = Input.Email;
+                if (!string.IsNullOrEmpty(Input.Telephone))
+                {
+                    await _userManager.SetPhoneNumberAsync(user, Input.Telephone);
+                }
 
-                // Set the provided email and phone number to the user
-                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
-                await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-                await _userManager.SetPhoneNumberAsync(user, Input.Telephone);
-
-                // Create the user in the database
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
                     TempData["SuccessMessage"] = "Votre compte a été créé avec succès. Veuillez confirmer votre email pour activer votre compte.";
+
+                    if (!string.IsNullOrEmpty(Input.Telephone))
+                    {
+                        // Rediriger l'utilisateur vers la page de configuration 2FA s'ils ont fourni un numéro de téléphone et veulent l'activer
+                        return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = true });
+                    }
+
+                    // Si 2FA ne doit pas être activé ou aucun numéro de téléphone n'a été fourni, procédez à la page de confirmation de l'inscription
                     return RedirectToPage("/RegisterConfirmation", new { email = user.Email, returnUrl });
                 }
+
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
 
-            // If we got this far, something failed, redisplay the form
+            // Afficher à nouveau le formulaire s'il a des erreurs
             return Page();
         }
+
 
 
 

@@ -17,13 +17,12 @@ using Projet_Final.Areas.Identity.Data;
 
 namespace Projet_Final.Areas.Identity.Pages.Account
 {
-    [AllowAnonymous]
-    public class ResendEmailConfirmationModel : PageModel
+    public class ForgotPasswordModel : PageModel
     {
         private readonly UserManager<ApplicationUtilisateur> _userManager;
         private readonly IEmailSender _emailSender;
 
-        public ResendEmailConfirmationModel(UserManager<ApplicationUtilisateur> userManager, IEmailSender emailSender)
+        public ForgotPasswordModel(UserManager<ApplicationUtilisateur> userManager, IEmailSender emailSender)
         {
             _userManager = userManager;
             _emailSender = emailSender;
@@ -51,47 +50,36 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             public string Email { get; set; }
         }
 
-        public void OnGet()
-        {
-        }
-
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return Page();
+                var user = await _userManager.FindByEmailAsync(Input.Email);
+                if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+                {
+                    // Don't reveal that the user does not exist or is not confirmed
+                    return RedirectToPage("./ForgotPasswordConfirmation");
+                }
+
+                // For more information on how to enable account confirmation and password reset please
+                // visit https://go.microsoft.com/fwlink/?LinkID=532713
+                var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                var callbackUrl = Url.Page(
+                    "/Account/ResetPassword",
+                    pageHandler: null,
+                    values: new { area = "Identity", code },
+                    protocol: Request.Scheme);
+
+                await _emailSender.SendEmailAsync(
+                    Input.Email,
+                    "Reset Password",
+                    $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                return RedirectToPage("./ForgotPasswordConfirmation");
             }
 
-            var user = await _userManager.FindByEmailAsync(Input.Email);
-            if (user == null)
-            {
-                ModelState.AddModelError(string.Empty, "Verification email sent. Please check your email.");
-                return Page();
-            }
-
-            if (user.EmailConfirmed)
-            {
-                ModelState.AddModelError(string.Empty, "Your email is already confirmed.");
-                return Page();
-            }
-
-            var userId = await _userManager.GetUserIdAsync(user);
-            var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-            var callbackUrl = Url.Page(
-                "/Account/ConfirmEmail",
-                pageHandler: null,
-                values: new { userId = userId, code = code },
-                protocol: Request.Scheme);
-
-            await _emailSender.SendEmailAsync(
-                Input.Email,
-                "Confirm your email",
-                $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
-            ModelState.AddModelError(string.Empty, "Verification email sent. Please check your email.");
             return Page();
         }
-
     }
 }
