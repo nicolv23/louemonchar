@@ -69,6 +69,12 @@ namespace Projet_Final.Areas.Identity.Pages.Account
                 return Page();
             }
 
+            if (user.EmailConfirmed)
+            {
+                ModelState.AddModelError(string.Empty, "Your email is already confirmed.");
+                return Page();
+            }
+
             var userId = await _userManager.GetUserIdAsync(user);
             var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -77,6 +83,7 @@ namespace Projet_Final.Areas.Identity.Pages.Account
                 pageHandler: null,
                 values: new { userId = userId, code = code },
                 protocol: Request.Scheme);
+
             await _emailSender.SendEmailAsync(
                 Input.Email,
                 "Confirm your email",
@@ -85,5 +92,6 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             ModelState.AddModelError(string.Empty, "Verification email sent. Please check your email.");
             return Page();
         }
+
     }
 }
