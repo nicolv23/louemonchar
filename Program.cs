@@ -47,6 +47,9 @@ builder.Services.AddSignalR();
 builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequireUppercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Lockout.MaxFailedAccessAttempts = 5;
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15); // Dur�e de verrouillage du compte
 });
 
 builder.Services.AddSingleton<TestData>();

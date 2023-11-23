@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
@@ -44,6 +45,7 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            ExternalLogins = new List<AuthenticationScheme>();
         }
 
         /// <summary>
@@ -112,6 +114,8 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             [Display(Name = "Confirmer mot de passe")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            public bool TwoFactorEnabled { get; set; }
         }
 
 
@@ -146,13 +150,7 @@ namespace Projet_Final.Areas.Identity.Pages.Account
                 {
                     TempData["SuccessMessage"] = "Votre compte a été créé avec succès. Veuillez confirmer votre email pour activer votre compte.";
 
-                    if (!string.IsNullOrEmpty(Input.Telephone))
-                    {
-                        // Rediriger l'utilisateur vers la page de configuration 2FA s'ils ont fourni un numéro de téléphone et veulent l'activer
-                        return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = true });
-                    }
-
-                    // Si 2FA ne doit pas être activé ou aucun numéro de téléphone n'a été fourni, procédez à la page de confirmation de l'inscription
+                    // Procéder à la page de Confirmation d'inscription
                     return RedirectToPage("/RegisterConfirmation", new { email = user.Email, returnUrl });
                 }
 

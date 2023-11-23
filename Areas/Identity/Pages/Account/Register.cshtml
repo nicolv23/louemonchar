@@ -46,6 +46,10 @@
                         <label asp-for="Input.ConfirmPassword">Confirmer Mot de Passe</label>
                         <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                     </div>
+                    <div class="form-check mb-3">
+                        <input asp-for="Input.TwoFactorEnabled" class="form-check-input" />
+                        <label class="form-check-label" asp-for="Input.TwoFactorEnabled">Activer l'authentification à deux facteurs sur SMS</label>
+                    </div>
                     <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">S'inscrire</button>
                     @if (TempData["SuccessMessage"] != null)
                     {
@@ -81,17 +85,44 @@
                             <p>
                                 @foreach (var provider in Model.ExternalLogins!)
                                 {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Se connecter avec votre compte @provider.DisplayName">@provider.DisplayName</button>
+                                    <button id="externalLoginButton" type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Se connecter avec votre compte @provider.DisplayName" disabled>@provider.DisplayName</button>
                                 }
                             </p>
+                            <p class="text-muted">Note: Veuillez remplir les champs de prénom et de nom de famille ci-dessus pour utiliser l'authentification externe.</p>
                         </div>
                     </form>
                 }
             }
         </section>
     </div>
-</div>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var prenom = document.querySelector('#Input_FirstName');
+            var nomFamille = document.querySelector('#Input_LastName');
+            var googleLoginButton = document.querySelector('button[value="Google"]');
+            var facebookLoginButton = document.querySelector('button[value="Facebook"]');
+
+            function checkValidity() {
+                var prenomEstValide = prenom.checkValidity();
+                var nomFamilleEstValide = nomFamille.checkValidity();
+                return prenomEstValide && nomFamilleEstValide;
+            }
+
+            function updateButtonState() {
+                var estValide = checkValidity();
+                var champTextesVide = prenom.value.trim() === '' || nomFamille.value.trim() === '';
+
+                googleLoginButton.disabled = !estValide || champTextesVide;
+                facebookLoginButton.disabled = !estValide || champTextesVide;
+            }
+
+            prenom.addEventListener('input', updateButtonState);
+            nomFamille.addEventListener('input', updateButtonState);
+        });
+    </script>
 }
