@@ -1,0 +1,41 @@
+﻿@page
+@model ExternalLoginModel
+@{
+    ViewData["Title"] = "Inscription avec un authentification externe";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h2 id="external-login-title">Associez votre compte @Model.ProviderDisplayName.</h2>
+<hr />
+
+<p id="external-login-description" class="text-info">
+    Vous vous êtes authentifié avec succès avec <strong>@Model.ProviderDisplayName</strong>.
+    Veuillez entrer une adresse e-mail pour ce site ci-dessous et cliquer sur le bouton S'inscrire pour terminer
+    la connexion.
+</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-page-handler="Confirmation" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Email" class="form-control" autocomplete="email" placeholder="Veuillez entrer votre e-mail." />
+                <label asp-for="Input.Email" class="form-label"></label>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.FirstName" class="form-control" autocomplete="firstname" aria-required="true" placeholder="Prénom" />
+                <label asp-for="Input.FirstName">Prénom</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.LastName" class="form-control" autocomplete="lastname" aria-required="true" placeholder="Nom de famille" />
+                <label asp-for="Input.LastName">Nom De Famille</label>
+            </div>
+            <button type="submit" class="w-100 btn btn-lg btn-primary">S'inscrire</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
