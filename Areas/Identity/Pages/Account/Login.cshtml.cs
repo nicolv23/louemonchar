@@ -110,8 +110,17 @@ namespace Projet_Final.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
+                var user = await _signInManager.UserManager.FindByEmailAsync(Input.Email);
+                if (user != null)
+                {
+                    var hasPhoneNumber = await _signInManager.UserManager.GetPhoneNumberAsync(user);
+                    if (!string.IsNullOrEmpty(hasPhoneNumber))
+                    {
+                        // L'utilisateur a un numéro de téléphone, rediriger vers LoginWith2fa
+                        return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
+                    }
+                }
+
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
@@ -134,7 +143,7 @@ namespace Projet_Final.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
+            // Réafficher le formulaire si ça affiche des erreurs
             return Page();
         }
     }

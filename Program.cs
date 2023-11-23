@@ -6,7 +6,10 @@ using Projet_Final.Hubs;
 using Projet_Final.Models;
 using Projet_Final.Services;
 using Projet_Final.Settings;
+using SendGrid;
 using SendGrid.Extensions.DependencyInjection;
+using SendGrid.Helpers.Mail;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ApplicationDbContextConnection' not found.");
@@ -16,14 +19,24 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddDefaultIdentity<ApplicationUtilisateur>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
+//External LogIn
 builder.Services.Configure<SendGridSettings>(builder.Configuration.GetSection("SendGridSettings"));
 builder.Services.Configure<TwilioSettings>(builder.Configuration.GetSection("TwilioSettings"));
+
+//Google
 builder.Services.AddAuthentication().AddGoogle(googleOptions =>
 {
     googleOptions.ClientId = builder.Configuration.GetSection("GoogleAuthSettings")
     .GetValue<string>("ClientId");
     googleOptions.ClientSecret = builder.Configuration.GetSection("GoogleAuthSettings")
     .GetValue<string>("ClientSecret");
+});
+
+//Facebook
+builder.Services.AddAuthentication().AddFacebook(opt =>
+{
+    opt.ClientId = "2128729867488511";
+    opt.ClientSecret = "97a00ea7a960dd8643398adc88f5833b";
 });
 
 // Add services to the container.
@@ -42,6 +55,7 @@ builder.Services.AddSendGrid(options => {
     .GetValue<string>("ApiKey");
 });
 builder.Services.AddScoped<IEmailSender, EmailSenderService>();
+builder.Services.AddTransient<IEmailSender, EmailSenderService>();
 builder.Services.AddScoped<ISMSSenderService, SMSSenderService>();
 
 var app = builder.Build();
