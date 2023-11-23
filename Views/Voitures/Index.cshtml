@@ -28,6 +28,7 @@
                 @Html.DisplayNameFor(model => model.EstDisponible)
             </th>
             <th></th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -47,6 +48,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.EstDisponible)
+            </td>
+            <td>
+                    <a asp-action="Viewpayer">Réservé</a>
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

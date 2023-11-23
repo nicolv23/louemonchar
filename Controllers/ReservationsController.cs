@@ -166,6 +166,13 @@ namespace Projet_Final.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public ActionResult Viewpayer()
+        {
+           return View("payer");
+
+        }
+
+
         private bool ReservationExists(int id)
         {
           return (_context.Reservations?.Any(e => e.Id == id)).GetValueOrDefault();
