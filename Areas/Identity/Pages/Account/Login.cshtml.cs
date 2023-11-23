@@ -113,37 +113,41 @@ namespace Projet_Final.Areas.Identity.Pages.Account
                 var user = await _signInManager.UserManager.FindByEmailAsync(Input.Email);
                 if (user != null)
                 {
-                    var hasPhoneNumber = await _signInManager.UserManager.GetPhoneNumberAsync(user);
-                    if (!string.IsNullOrEmpty(hasPhoneNumber))
+
+                    var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: true);
+
+                    if (result.Succeeded)
                     {
-                        // L'utilisateur a un numéro de téléphone, rediriger vers LoginWith2fa
+                        _logger.LogInformation("User logged in.");
+                        return LocalRedirect(returnUrl);
+                    }
+                    if (result.RequiresTwoFactor)
+                    {
                         return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
+                    }
+                    if (result.IsLockedOut)
+                    {
+                        _logger.LogWarning("User account locked out.");
+                        return RedirectToPage("./Lockout");
                     }
                 }
 
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
-                if (result.Succeeded)
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+
+                if (user != null)
                 {
-                    _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
-                }
-                if (result.RequiresTwoFactor)
-                {
-                    return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
-                }
-                if (result.IsLockedOut)
-                {
-                    _logger.LogWarning("User account locked out.");
-                    return RedirectToPage("./Lockout");
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                    return Page();
+                    // Augmenter le nombre de tentatives de connexion infructueuses
+                    await _signInManager.UserManager.AccessFailedAsync(user);
+                    if (await _signInManager.UserManager.IsLockedOutAsync(user))
+                    {
+                        // Le compte est verrouillé
+                        _logger.LogWarning("User account locked out.");
+                        return RedirectToPage("./Lockout");
+                    }
                 }
             }
 
-            // Réafficher le formulaire si ça affiche des erreurs
+            // Si le modèle n'est pas valide ou si des erreurs se sont produites, retourner la page avec les erreurs de validation
             return Page();
         }
     }
