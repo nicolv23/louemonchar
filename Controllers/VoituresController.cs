@@ -154,6 +154,11 @@ namespace Projet_Final.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public ActionResult Viewpayer()
+        {
+            return View("payer");
+
+        }
 
         private bool VoitureExists(int id)
         {
