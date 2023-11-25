@@ -19,7 +19,7 @@ namespace Projet_Final.Controllers
 
         public IActionResult Index()
         {
-            ViewData["UtilisateurID"] = _userManager.GetUserId(this.User);
+            ViewData["UtilisateurID"]=_userManager.GetUserId(this.User);
             return View();
         }
 
