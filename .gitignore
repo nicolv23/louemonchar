@@ -1,7 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/.vs/Projet_Final/FileContentIndex
-/obj/Debug/net7.0/Projet_Final.AssemblyInfo.cs
-/obj/Debug/net7.0/Projet_Final.AssemblyInfoInputs.cache
