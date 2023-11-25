@@ -1,260 +1,472 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Projet_Final.bundle.scp.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Projet_Final.bundle.scp.css",
       "PackagePath": "staticwebassets\\Projet_Final.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\bootstrap-datepicker.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\css\\mixins\\_text-hide.css",
+      "PackagePath": "staticwebassets\\css\\css\\mixins\\_text-hide.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\jquery.timepicker.css",
+      "PackagePath": "staticwebassets\\css\\jquery.timepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\js\\messagerie.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\about\\abouthome.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\abouthome.jpg"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_1.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_2.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_3.jpeg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_4.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_5.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_6.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\icons\\limousine.png",
+      "PackagePath": "staticwebassets\\images\\icons\\limousine.png"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\logos\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\logos\\logoblanc.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logoblanc.png"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\.DS_Store",
+      "PackagePath": "staticwebassets\\js\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\aos.js",
+      "PackagePath": "staticwebassets\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery-migrate-3.0.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-migrate-3.0.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.animateNumber.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.animateNumber.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.stellar.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.stellar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.timepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.timepicker.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\messagerie.js",
       "PackagePath": "staticwebassets\\js\\messagerie.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\range.js",
+      "PackagePath": "staticwebassets\\js\\range.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\scrollax.min.js",
+      "PackagePath": "staticwebassets\\js\\scrollax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Nicolas Lazarte\\Projet_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\bootstrap.js",
+      "PackagePath": "staticwebassets\\scripts\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\scripts\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.intellisense.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.4.1.intellisense.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.4.1.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.min.map",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.4.1.min.map"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.slim.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.4.1.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.slim.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.4.1.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.slim.min.map",
+      "PackagePath": "staticwebassets\\scripts\\jquery-3.4.1.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate-vsdoc.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate-vsdoc.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\scripts\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\modernizr-2.8.3.js",
+      "PackagePath": "staticwebassets\\scripts\\modernizr-2.8.3.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Projet_Final.Microsoft.AspNetCore.StaticWebAssets.props",
