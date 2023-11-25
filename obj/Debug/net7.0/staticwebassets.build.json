@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "e/jn3ohrzIEOC/u5VVCjU/qSFZBt4DpNejXQXH/wIYU=",
+=======
+  "Hash": "WMVED+UGwRMJiuVMXjnO2ZXND+yeojsz5U6KgdlZpPk=",
+>>>>>>> web_billy
   "Source": "Projet_Final",
   "BasePath": "_content/Projet_Final",
   "Mode": "Default",
@@ -10,17 +14,28 @@
     {
       "Name": "Projet_Final\\wwwroot",
       "Source": "Projet_Final",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\css\\site.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\css\\site.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -33,6 +48,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\css\\site.css"
     },
     {
@@ -40,6 +56,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\favicon.ico",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -52,6 +77,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\favicon.ico"
     },
     {
@@ -59,6 +85,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\js\\site.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -71,6 +106,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\js\\site.js"
     },
     {
@@ -78,6 +114,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -90,6 +135,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
@@ -97,6 +143,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -109,6 +164,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
@@ -116,6 +172,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -128,6 +193,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
@@ -135,6 +201,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -147,6 +222,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
@@ -154,6 +230,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -166,6 +251,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
@@ -173,6 +259,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -185,6 +280,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
@@ -192,6 +288,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -204,6 +309,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
@@ -211,6 +317,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -223,6 +338,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
@@ -230,6 +346,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -242,6 +367,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
@@ -249,6 +375,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -261,6 +396,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
@@ -268,6 +404,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -280,6 +425,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
@@ -287,6 +433,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -299,6 +454,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
@@ -306,6 +462,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -318,6 +483,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
@@ -325,6 +491,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -337,6 +512,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
@@ -344,6 +520,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -356,6 +541,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
@@ -363,6 +549,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -375,6 +570,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
@@ -382,6 +578,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -394,6 +599,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
@@ -401,6 +607,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -413,6 +628,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
@@ -420,6 +636,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -432,6 +657,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
@@ -439,6 +665,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -451,6 +686,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
@@ -458,6 +694,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -470,6 +715,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
@@ -477,6 +723,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -489,6 +744,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
@@ -496,6 +752,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -508,6 +773,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
@@ -515,6 +781,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -527,6 +802,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
@@ -534,6 +810,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -546,6 +831,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
@@ -553,6 +839,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -565,6 +860,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
@@ -572,6 +868,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -584,6 +889,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
@@ -591,6 +897,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -603,6 +918,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
@@ -610,6 +926,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -622,6 +947,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
@@ -629,6 +955,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -641,6 +976,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
@@ -648,6 +984,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -660,6 +1005,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
@@ -667,6 +1013,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -679,6 +1034,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
@@ -686,6 +1042,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -698,6 +1063,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
@@ -705,6 +1071,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -717,6 +1092,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
@@ -724,6 +1100,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -736,6 +1121,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
@@ -743,6 +1129,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -755,6 +1150,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
@@ -762,6 +1158,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -774,6 +1179,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
@@ -781,6 +1187,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -793,6 +1208,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
@@ -800,6 +1216,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -812,6 +1237,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
@@ -819,6 +1245,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -831,6 +1266,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
@@ -838,6 +1274,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -850,6 +1295,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
@@ -857,6 +1303,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -869,6 +1324,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
@@ -876,6 +1332,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -888,6 +1353,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
@@ -895,6 +1361,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -907,6 +1382,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
@@ -914,6 +1390,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -926,6 +1411,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
     },
     {
@@ -933,6 +1419,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -945,6 +1440,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
     },
     {
@@ -952,6 +1448,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -964,6 +1469,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
@@ -971,6 +1477,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -983,6 +1498,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
@@ -990,6 +1506,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1002,6 +1527,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
@@ -1009,6 +1535,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1021,6 +1556,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
@@ -1028,6 +1564,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1040,6 +1585,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
@@ -1047,6 +1593,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1059,6 +1614,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
@@ -1066,6 +1622,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1078,6 +1643,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
@@ -1085,6 +1651,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1097,6 +1672,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
     },
     {
@@ -1104,6 +1680,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1116,6 +1701,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
@@ -1123,6 +1709,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1135,6 +1730,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
@@ -1142,6 +1738,15 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "Microsoft.AspNetCore.Identity.UI",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\",
+>>>>>>> web_billy
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1154,6 +1759,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
@@ -1161,6 +1767,15 @@
       "SourceId": "Projet_Final",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Projet_Final.styles.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "Projet_Final.styles.css",
       "AssetKind": "All",
@@ -1173,6 +1788,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Projet_Final.styles.css"
     },
     {
@@ -1180,6 +1796,15 @@
       "SourceId": "Projet_Final",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Projet_Final.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Projet_Final.bundle.scp.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "Projet_Final.bundle.scp.css",
       "AssetKind": "All",
@@ -1192,6 +1817,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\antoi\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Projet_Final.bundle.scp.css"
     },
     {
@@ -1199,6 +1825,205 @@
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Projet_Final.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\animate.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/animate.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\animate.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\bootstrap\\bootstrap-grid.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/bootstrap/bootstrap-grid.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\bootstrap\\bootstrap-reboot.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/bootstrap/bootstrap-reboot.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\bootstrap-datepicker.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/bootstrap-datepicker.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap-datepicker.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\css\\bootstrap-reboot.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/css/bootstrap-reboot.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\css\\mixins\\_text-hide.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/css/mixins/_text-hide.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\css\\mixins\\_text-hide.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\flaticon.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/flaticon.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\flaticon.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\jquery.timepicker.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/jquery.timepicker.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jquery.timepicker.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\owl.carousel.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/owl.carousel.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\owl.carousel.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\owl.theme.default.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/owl.theme.default.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\site.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1214,10 +2039,36 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\favicon.ico",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\css\\style.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\favicon.ico",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1233,10 +2084,454 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\js\\messagerie.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\about\\abouthome.jpg",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/about/abouthome.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\about\\abouthome.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_1.jpg",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/carroussel/carroussel_1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carroussel\\carroussel_1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_2.jpg",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/carroussel/carroussel_2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carroussel\\carroussel_2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_3.jpeg",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/carroussel/carroussel_3.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carroussel\\carroussel_3.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_4.jpg",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/carroussel/carroussel_4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carroussel\\carroussel_4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_5.jpg",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/carroussel/carroussel_5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carroussel\\carroussel_5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_6.jpg",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/carroussel/carroussel_6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\carroussel\\carroussel_6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\icons\\limousine.png",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/icons/limousine.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\icons\\limousine.png"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\logos\\logo.png",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/logos/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logos\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\images\\logos\\logoblanc.png",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "images/logos/logoblanc.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logos\\logoblanc.png"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\.DS_Store",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\.DS_Store"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\aos.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/aos.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\aos.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\bootstrap-datepicker.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/bootstrap-datepicker.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap-datepicker.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.animateNumber.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/jquery.animateNumber.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.animateNumber.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.easing.1.3.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/jquery.easing.1.3.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.stellar.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/jquery.stellar.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.stellar.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.timepicker.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/jquery.timepicker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.timepicker.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery.waypoints.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/jquery.waypoints.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/jquery-3.2.1.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\jquery-migrate-3.0.1.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/jquery-migrate-3.0.1.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-migrate-3.0.1.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\main.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\messagerie.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "js/messagerie.js",
       "AssetKind": "All",
@@ -1252,10 +2547,93 @@
       "OriginalItemSpec": "wwwroot\\js\\messagerie.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\owl.carousel.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/owl.carousel.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\owl.carousel.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\popper.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/popper.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\range.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/range.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\range.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\scrollax.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "js/scrollax.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scrollax.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "js/signalr/dist/browser/signalr.js",
       "AssetKind": "All",
@@ -1271,10 +2649,17 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "js/signalr/dist/browser/signalr.min.js",
       "AssetKind": "All",
@@ -1290,10 +2675,17 @@
       "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\js\\site.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\js\\site.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1309,10 +2701,17 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1328,10 +2727,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1347,10 +2753,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1366,10 +2779,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1385,10 +2805,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1404,10 +2831,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1423,10 +2857,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1442,10 +2883,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1461,10 +2909,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1480,10 +2935,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1499,10 +2961,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1518,10 +2987,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1537,10 +3013,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1556,10 +3039,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1575,10 +3065,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1594,10 +3091,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1613,10 +3117,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1632,10 +3143,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1651,10 +3169,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1670,10 +3195,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1689,10 +3221,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1708,10 +3247,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1727,10 +3273,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1746,10 +3299,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1765,10 +3325,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1784,10 +3351,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1803,10 +3377,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1822,10 +3403,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1841,10 +3429,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1860,10 +3455,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1879,10 +3481,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1898,10 +3507,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1917,10 +3533,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1936,10 +3559,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1955,10 +3585,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1974,10 +3611,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1993,10 +3637,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2012,10 +3663,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2031,10 +3689,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2050,10 +3715,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2069,10 +3741,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2088,10 +3767,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2107,10 +3793,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2126,10 +3819,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2145,10 +3845,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2164,10 +3871,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2183,10 +3897,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2202,10 +3923,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2221,10 +3949,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2240,10 +3975,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2259,10 +4001,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2278,10 +4027,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2297,10 +4053,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2316,10 +4079,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2335,10 +4105,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2354,10 +4131,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2373,10 +4157,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Projet_Final",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\antoi\\locationvoiture\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+>>>>>>> web_billy
       "BasePath": "_content/Projet_Final",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2390,6 +4181,291 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\bootstrap.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/bootstrap.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\bootstrap.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\bootstrap.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery.validate.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery.validate.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery.validate.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate.unobtrusive.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery.validate.unobtrusive.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery.validate.unobtrusive.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery.validate-vsdoc.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery.validate-vsdoc.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery.validate-vsdoc.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.intellisense.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery-3.4.1.intellisense.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery-3.4.1.intellisense.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery-3.4.1.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery-3.4.1.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery-3.4.1.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery-3.4.1.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.min.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery-3.4.1.min.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery-3.4.1.min.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.slim.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery-3.4.1.slim.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery-3.4.1.slim.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.slim.min.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery-3.4.1.slim.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery-3.4.1.slim.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\jquery-3.4.1.slim.min.map",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/jquery-3.4.1.slim.min.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\jquery-3.4.1.slim.min.map"
+    },
+    {
+      "Identity": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\scripts\\modernizr-2.8.3.js",
+      "SourceId": "Projet_Final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\billy\\OneDrive\\Documents\\Etudes\\Web3\\locationvoiture\\wwwroot\\",
+      "BasePath": "_content/Projet_Final",
+      "RelativePath": "scripts/modernizr-2.8.3.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\modernizr-2.8.3.js"
     }
   ]
 }
