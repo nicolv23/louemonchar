@@ -8,9 +8,73 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Projet_Final.styles.css" asp-append-version="true" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet;" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iK6UqZLlqcXJ3udVBtC7MC5E9F/1R+77EL6ZDx1qd2QEm+b2IlbsBETEL" crossorigin="anonymous">
+
+
+    <script src="~/js/carroussel.js"></script>
+    <script src="~/js/experiences.js"></script>
+    <script src="~/js/services.js"></script>
+    <link rel="stylesheet" href="~/css/carroussel.css"/>
+    <link rel="stylesheet" href="~/css/about.css" />
+    <link rel="stylesheet" href="~/css/serviceaccueil.css" />
+    <link rel="stylesheet" href="~/css/experiences.css" />
+    <link rel="stylesheet" href="~/css/footer.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+
+
+
+
+
+    <!--scripts pour carroussel de la page d'accueil-->
+   
+
+
+
+
+    
+
+
+
 </head>
 <body>
     <header>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light" style="background-color: #343434;">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logos/logoblanc.png" alt="Logo" height="30" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Voitures" asp-action="Index">Liste voitures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservations" asp-action="Index">Voir réservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Index">Liste clients</a>
+                        </li>
+                        <partial name="_LoginPartial.cshtml" />
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!--
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Projet_Final</a>
@@ -21,31 +85,120 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Voitures" asp-action="Index">Accéder à la liste de voitures</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Voitures" asp-action="Index">Liste voitures</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservations" asp-action="Index">Voir mes réservations</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reservations" asp-action="Index">Voir réservations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Index">Accéder à la liste des clients</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Index">Liste clients</a>
                         </li>
                         <partial name="_LoginPartial.cshtml" />
                     </ul>
                 </div>
             </div>
         </nav>
+        -->
     </header>
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+    <script src="/"></script>
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Projet_Final - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!--Footer-->
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Loue<span>MonChar</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Voitures</a>
+                |
+                <a href="#">Rèservation</a>
+                |
+                <a href="#">Clients</a>
+                |
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>LoueMonChar</strong> Tous droits rèservés</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>
+                    <span>Web3</span>
+                    Rosemont
+                </p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 (555) 555 5555</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="info@louemonchar.ca">info@louemonchar.ca</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>A propos de nous</span>
+                <strong>Loue mon char</strong> est une compagnie de location de voitures.
+                Notre devise : Vous garentir le meilleur service.
+                Pour voyager loin, loue mon char.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
         </div>
     </footer>
+
+
+
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

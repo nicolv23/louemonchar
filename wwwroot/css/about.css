@@ -1,0 +1,229 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+    a,
+    a:active,
+    a:focus {
+        color: #6f6f6f;
+        text-decoration: none;
+        transition-timing-function: ease-in-out;
+        -ms-transition-timing-function: ease-in-out;
+        -moz-transition-timing-function: ease-in-out;
+        -webkit-transition-timing-function: ease-in-out;
+        -o-transition-timing-function: ease-in-out;
+        transition-duration: .2s;
+        -ms-transition-duration: .2s;
+        -moz-transition-duration: .2s;
+        -webkit-transition-duration: .2s;
+        -o-transition-duration: .2s;
+    }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+    /* min-height: 100vh;*/
+}
+
+.sec-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+
+    .sec-title .title {
+        position: relative;
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        color: #00aeef;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .sec-title h2 {
+        position: relative;
+        display: block;
+        font-size: 40px;
+        line-height: 1.28em;
+        color: #222222;
+        font-weight: 600;
+        padding-bottom: 18px;
+    }
+
+        .sec-title h2:before {
+            position: absolute;
+            content: '';
+            left: 0px;
+            bottom: 0px;
+            width: 50px;
+            height: 3px;
+            background-color: #d1d2d6;
+        }
+
+    .sec-title .text {
+        position: relative;
+        font-size: 16px;
+        line-height: 26px;
+        color: #848484;
+        font-weight: 400;
+        margin-top: 35px;
+    }
+
+    .sec-title.light h2 {
+        color: #ffffff;
+    }
+
+    .sec-title.text-center h2:before {
+        left: 50%;
+        margin-left: -25px;
+    }
+
+
+.apropos {
+    position: relative;
+    padding: 120px 0 70px;
+}
+
+    .apropos .sec-title {
+        margin-bottom: 45px;
+    }
+
+    .apropos .content-column {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+        .apropos .content-column .inner-column {
+            position: relative;
+            padding-left: 30px;
+            
+        }
+
+    .apropos .text {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #848484;
+        font-weight: 400;
+    }
+
+    
+
+
+
+.apropos .btn-box {
+    position: relative;
+}
+
+        .apropos .btn-box a {
+            padding: 15px 50px;
+
+        }
+
+    .apropos .image-column {
+        position: relative;
+    }
+
+        .apropos .image-column .text-layer {
+            position: absolute;
+            right: -110px;
+            top: 50%;
+            font-size: 325px;
+            line-height: 1em;
+            color: #ffffff;
+            margin-top: -175px;
+            font-weight: 500;
+        }
+
+        .apropos .image-column .inner-column {
+            position: relative;
+            padding-left: 100px;
+            padding-bottom: 0px;
+
+
+        }
+
+            .apropos .image-column .inner-column .author-desc {
+                position: absolute;
+                bottom: 16px;
+                z-index: 1;
+                background: orange;
+                padding: 10px 15px;
+                left: 96px;
+                width: calc(100% - 152px);
+                border-radius: 50px;
+            }
+
+                .apropos .image-column .inner-column .author-desc h2 {
+                    font-size: 21px;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    color: #fff;
+                    margin: 0;
+                }
+
+                .apropos .image-column .inner-column .author-desc span {
+                    font-size: 16px;
+                    letter-spacing: 6px;
+                    text-align: center;
+                    color: #fff;
+                    display: block;
+                    font-weight: 400;
+                }
+
+            .apropos .image-column .inner-column:before {
+                content: '';
+                position: absolute;
+                width: calc(50% + 80px);
+                height: calc(100% + 160px);
+                top: -80px;
+                left: -3px;
+                background: transparent;
+                z-index: 0;
+                border: 44px solid #ea7b12;
+            }
+
+        .apropos .image-column .image-1 {
+            position: relative;
+        }
+
+        .apropos .image-column .image-2 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+            .apropos .image-column .image-2 img,
+            .apropos .image-column .image-1 img {
+                box-shadow: 0 30px 50px rgba(8,13,62,.15);
+                border-radius: 46px;
+            }
+
+       
+
+            
+
+                

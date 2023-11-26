@@ -2,40 +2,251 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Bienvenue dans notre service de location de voitures</h1>
-    <p>Découvrez notre large gamme de véhicules disponibles pour la location.</p>
-    <a class="btn btn-primary" asp-controller="Voitures" asp-action="Index">Voir les voitures disponibles</a>
-    <p>Utilisateur ID : @ViewData["UtilisateurID"]</p>
-</div>
 
-@if (User.Identity.IsAuthenticated) // Vérifie si l'utilisateur est connecté
-{
+
+<br />
+
+<!--Services-->
+
+<section id="carouselExample">
+
+    <div class="row justify-content-center">
+        <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+
+
+            <span class="subheading" style="color:black;font-size:xx-large">Réservez avec Louemonchar</span>
+            <p>Découvrez notre large gamme de véhicules disponibles pour la location.</p>
+            <br />
+
+            <a class="btn btn-primary" asp-controller="Voitures" asp-action="Index">Voir les voitures disponibles</a>
+        </div>
+    </div>
+
+
+<section class="card-container">
+    <div class="card">
+        <div class="face face-1">
+            <img src="~/images/services/service_1.jpeg" />
+            <h3>
+                Voiture de cérémonie
+            </h3>
+        </div>
+        <div class="face face-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face-1">
+            <img src="~/images/services/service_2.jpg" />
+            <h3>Voiture avec choffeur</h3>
+        </div>
+        <div class="face face-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face face-1">
+            <img src="~/images/services/service_3.jpg" />
+            <h3>Voiture de touriste</h3>
+        </div>
+        <div class="face face-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!--Séparateur-->
+
+    <br />
+    <br />
+ 
+
+    <h2 class="fancy" style="--w: 50vw;--c: #ea7b12;--b:4px;--g:-5px">A propos</h2>
+    
+    <br />
+    <br />
+
+
+<!--A propos-->
+
+
+<section class="apropos">
     <div class="container">
-        <div class="row p-1">
-            <div class="col-1">User</div>
-            <div class="col-5"><input type="text" id="userInput" /></div>
+        <div class="row">
+            <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+                <div class="inner-column">
+                    <div class="sec-title">
+                        <span class="title">À propos de nous</span>
+
+                        <h2>Bienvenue sur le site de Louemonchar</h2>
+                    </div>
+                    <div class="text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+
+                    </div>
+                    <div class="text">
+                        We are here to serve you next level tutorial that currently in trend to match you with your expertise. 
+                        Css3 transition is a learning website. where you can find many good quality content related to web development 
+                        and tutorials about plugins. here we are using html, html5, css, css3, jquery & javascript along with inspirational 
+                        UI design layout by professionals by using Photoshop and adobe allustrator.
+                    </div>
+
+                    <br />
+                    <br />
+                    <div class="btn-box">
+                        <a href="#" class="btn-primary">Louer une voiture</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Colonne -->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column wow fadeInLeft">
+                    <div class="author-desc">
+                        <h2>Loue mon char</h2>
+                        <span>Pour voyager plus loin</span>
+                    </div>
+                    <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img title="A propos" src="~/images/about/abouthome.jpg" alt=""></a></figure>
+
+                </div>
+            </div>
+
         </div>
-        <div class="row p-1">
-            <div class="col-1">Message</div>
-            <div class="col-5"><input type="text" class="w-100" id="messageInput" /></div>
-        </div>
-        <div class="row p-1">
-            <div class="col-6 text-end">
-                <input type="button" id="sendButton" value="Send Message" />
+        
+    </div>
+</section>
+
+
+    <!--Séparateur-->
+
+    <br />
+    <br />
+
+
+    <h2 class="fancy" style="--w: 50vw;--c: #ea7b12;--b:4px;--g:-5px">Voitures les mieux notées</h2>
+
+    <br />
+    <br />
+
+
+
+
+
+<!-- Carroussel-->
+
+
+    <div class="container">
+        <div class="slider">
+            <div class="slider-inner">
+                <div class="slider-item">
+                    <div class="box">
+                        <img src="~/images/carroussel/carroussel_1.jpg" alt="Photo 1">
+                        <h2>Titre de la photo 1</h2>
+                        <p>Prix : $XX.XX</p>
+                        <button class="btn btn-louer">Bouton 1</button>
+                        <button class="btn btn-retour">Bouton 2</button>
+                    </div>
+                </div>
+                <!-- Répétez la structure ci-dessus pour chaque élément du carrousel -->
+                <div class="slider-item">
+                    <div class="box">
+                        <img src="~/images/carroussel/carroussel_2.jpg" alt="Photo 2">
+                        <h2>Titre de la photo 2</h2>
+                        <p>Prix : $XX.XX</p>
+                        <button class="btn btn-louer">Bouton 1</button>
+                        <button class="btn btn-retour">Bouton 2</button>
+                    </div>
+                </div>
+                <!-- Répétez la structure ci-dessus pour chaque élément du carrousel -->
+                <div class="slider-item">
+                    <div class="box">
+                        <img src="~/images/carroussel/carroussel_3.jpeg" alt="Photo 2">
+                        <h2>Titre de la photo 2</h2>
+                        <p>Prix : $XX.XX</p>
+                        <button class="btn btn-louer">Bouton 1</button>
+                        <button class="btn btn-retour">Bouton 2</button>
+                    </div>
+                </div>
+                <!-- Répétez la structure ci-dessus pour chaque élément du carrousel -->
+                <div class="slider-item">
+                    <div class="box">
+                        <img src="~/images/carroussel/carroussel_4.jpg" alt="Photo 2">
+                        <h2>Titre de la photo 2</h2>
+                        <p>Prix : $XX.XX</p>
+                        <button class="btn btn-louer">Bouton 1</button>
+                        <button class="btn btn-retour">Bouton 2</button>
+                    </div>
+                </div>
+                <!-- Ajoutez d'autres éléments selon le même modèle
+                </div>
+                <div class="control">
+                    <button id="prev"><span>&ltrif;</span></button>
+                    <button id="next"><span>&rtrif;</span></button>
+                    </div>-->
             </div>
         </div>
-        <div class="row p-1">
-            <div class="col-6">
-                <hr />
+
+
+
+</section>
+
+
+
+<!--Expériences-->
+
+<section id="statistic" class="statistic-section one-page-section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-3">
+                <div class="counter">
+                   
+                    <h2 class="timer count-title count-number">23000</h2>
+                    <div class="stats-line-black"></div>
+                    <p class="stats-text">Clients</p>
+                </div>
             </div>
-        </div>
-        <div class="row p-1">
-            <div class="col-6">
-                <ul id="messagesList"></ul>
+            <div class="col-xs-12 col-md-3">
+                <div class="counter">
+                    
+                    <h2 class="timer count-title count-number">
+                        110000
+                    </h2>
+                    <div class="stats-line-black"></div>
+                    <p class="stats-text">Voitures</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="counter">
+                   
+                    <h2 class="timer count-title count-number">11</h2>
+                    <div class="stats-line-black"></div>
+                    <p class="stats-text">ans d`Experience</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="counter">
+                   
+                    <h2 class="timer count-title count-number">5</h2>
+                    <div class="stats-line-black"></div>
+                    <p class="stats-text">Provences</p>
+                </div>
             </div>
         </div>
     </div>
+</section>
+
+
+<br />
+<br />
+<br />
+
+
+
+
+
+
+
     <script src="~/js/signalr/dist/browser/signalr.js"></script>
     <script src="~/js/chat.js"></script>
-}
