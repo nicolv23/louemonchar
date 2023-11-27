@@ -1,0 +1,102 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 10px 0px;
+    animation: slideAnimation 10s linear infinite;
+}
+
+.slider-item {
+    flex-basis: 33.33%;
+    flex-shrink: 0;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .slider-item {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 567px) {
+    .slider-item {
+        flex-basis: 100%;
+    }
+}
+
+.box {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+    .box img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+h2, p {
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.btn-louer,
+.btn-retour {
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+    align-self: center;
+}
+
+.btn-louer {
+    background-color: #ea7b12;
+    color: white;
+}
+
+.btn-retour {
+    background-color: #7f7e7e;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #ea7b12;
+    color: white;
+    border:hidden;
+}
+
+@keyframes slideAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-32.40%);
+    }
+}
