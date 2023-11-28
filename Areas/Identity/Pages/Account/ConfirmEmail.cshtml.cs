@@ -68,7 +68,20 @@ namespace Projet_Final.Areas.Identity.Pages.Account
 
                 if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
                 {
-                    // Le courriel a été envoyé avec succès
+                    // Envoi du SMS
+                    var twilioSettings = _configuration.GetSection("TwilioSettings");
+                    var accountSid = twilioSettings["AccountSId"];
+                    var authToken = twilioSettings["AuthToken"];
+                    var twilioPhoneNumber = twilioSettings["FromPhoneNumber"];
+
+                    TwilioClient.Init(accountSid, authToken);
+
+                    var message = MessageResource.Create(
+                        body: "Merci d'avoir confirmé votre email sur notre plateforme.",
+                        from: new Twilio.Types.PhoneNumber(twilioPhoneNumber),
+                        to: new Twilio.Types.PhoneNumber(user.PhoneNumber) 
+                    );
+
                     // Redirection vers la page d'accueil ou une autre page après confirmation
                     return RedirectToPage("/Index");
                 }
