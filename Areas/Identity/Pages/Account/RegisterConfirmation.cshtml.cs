@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Projet_Final.Areas.Identity.Data;
+using SendGrid.Helpers.Mail;
+using SendGrid;
 
 namespace Projet_Final.Areas.Identity.Pages.Account
 {
@@ -60,8 +62,42 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             }
 
             Email = email;
-       
+
+            // Envoyer un message de bienvenue à LoueMonChar
+            await EnvoyerCourrielBienvenue(email);
+
             return Page();
         }
+
+        private async Task EnvoyerCourrielBienvenue(string email)
+        {
+            var apiKey = "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";
+
+            var client = new SendGridClient(apiKey);
+            var msg = new SendGridMessage()
+            {
+                From = new EmailAddress("nicolaslv0018@gmail.com", "Nicolas Lazarte"),
+                Subject = "Bienvenue sur LoueMonChar",
+                PlainTextContent = "Bienvenue sur LoueMonChar! Merci de vous être inscrit."
+            };
+            msg.AddTo(new EmailAddress(email));
+
+            var response = await client.SendEmailAsync(msg);
+
+            // Gérer la réponse de l'envoi de l'e-mail
+            if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
+            {
+                // L'e-mail a été envoyé avec succès
+                Console.WriteLine("L'e-mail de bienvenue a été envoyé avec succès à : " + email);
+                // Ajoutez ici d'autres actions en cas de succès
+            }
+            else
+            {
+                // Gérer l'échec de l'envoi de l'e-mail
+                Console.WriteLine("Échec de l'envoi de l'e-mail de bienvenue à : " + email);
+                // Ajoutez ici d'autres actions en cas d'échec
+            }
+        }
+
     }
 }

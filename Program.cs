@@ -17,6 +17,7 @@ var connectionString = builder.Configuration.GetConnectionString("ApplicationDbC
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddDefaultIdentity<ApplicationUtilisateur>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 //External LogIn
@@ -90,6 +91,59 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var dbContext = services.GetRequiredService<ApplicationDbContext>();
+    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+    var logger = loggerFactory.CreateLogger<Program>();
+
+    // Ajouter les rôles pour créer l'administrateur
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+    if (!await roleManager.RoleExistsAsync("Admin"))
+    {
+        await roleManager.CreateAsync(new IdentityRole("Admin"));
+    }
+
+    // Récupérer le service UserManager
+    var userManager = services.GetRequiredService<UserManager<ApplicationUtilisateur>>();
+
+    // Vérifier si un administrateur existe déjà
+    var adminUser = await userManager.FindByEmailAsync("admin@gmail.com");
+
+    // Si aucun administrateur n'existe, créez-en un
+    if (adminUser == null)
+    {
+        var admin = new ApplicationUtilisateur
+        {
+            UserName = "admin@gmail.com",
+            Email = "admin@gmail.com",
+            FirstName = "Admin", 
+            LastName = "Test"
+        };
+
+        var createAdmin = await userManager.CreateAsync(admin, "test1234!");
+
+        if (createAdmin.Succeeded)
+        {
+            // Ajoutez le rôle d'administrateur à l'utilisateur
+            var addToRoleResult = await userManager.AddToRoleAsync(admin, "Admin");
+
+            if (!addToRoleResult.Succeeded)
+            {
+                // Gérez l'échec d'ajout de rôle ici
+                // Vous pouvez logger l'erreur ou prendre des mesures appropriées
+
+                // Exemple de journalisation de l'erreur
+                logger.LogError("Échec lors de l'ajout du rôle à l'utilisateur : {Error}", addToRoleResult.Errors);
+            }
+        }
+        else
+        {
+            // Gérez l'échec de création d'utilisateur ici
+            // Vous pouvez logger l'erreur ou prendre des mesures appropriées
+
+            // Exemple de journalisation de l'erreur
+            logger.LogError("Échec lors de la création de l'utilisateur : {Error}", createAdmin.Errors);
+        }
+    }
+
     ApplicationDbContext.SeedData(dbContext);
 }
 
