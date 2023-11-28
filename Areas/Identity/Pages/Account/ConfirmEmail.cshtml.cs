@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
+using SendGrid.Helpers.Mail;
+using SendGrid;
 
 namespace Projet_Final.Areas.Identity.Pages.Account
 {
@@ -29,22 +31,6 @@ namespace Projet_Final.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnGetAsync(string userId, string code)
         {
-            var sendGridSettings = _configuration.GetSection("SendGridSettings");
-            var smtpServer = sendGridSettings["SmtpServer"];
-            // Vérification et récupération de la valeur du port avec une gestion d'erreur
-            var portValue = sendGridSettings["Port"];
-            int port;
-            if (!int.TryParse(portValue, out port))
-            {
-                // Gérer l'erreur si la valeur du port n'est pas valide
-                // Par exemple, retourner une vue avec un message d'erreur
-                return Content("Erreur de configuration du port SMTP");
-            }
-            var userName = sendGridSettings["UserName"];
-            var password = sendGridSettings["Password"];
-            var senderEmail = sendGridSettings["SenderEmail"];
-            var senderName = sendGridSettings["SenderName"];
-
             if (userId == null || code == null)
             {
                 return NotFound();
@@ -63,29 +49,55 @@ namespace Projet_Final.Areas.Identity.Pages.Account
             {
                 _logger.LogInformation("User confirmed email successfully.");
 
-                // Envoi du SMS de confirmation via Twilio
-                var twilioSettings = _configuration.GetSection("TwilioSettings");
-                var accountSid = twilioSettings["AccountSId"];
-                var authToken = twilioSettings["AuthToken"];
-                var fromPhoneNumber = twilioSettings["FromPhoneNumber"];
+                // Utilisation de SendGrid pour envoyer un e-mail de remerciement
+                var sendGridSettings = _configuration.GetSection("SendGridSettings");
+                var apiKey = sendGridSettings["ApiKey"];
+                var senderEmail = sendGridSettings["FromEmail"];
+                var senderName = sendGridSettings["EmailName"];
 
-                TwilioClient.Init(accountSid, authToken);
+                var client = new SendGridClient(apiKey);
+                var msg = new SendGridMessage()
+                {
+                    From = new EmailAddress(senderEmail, senderName),
+                    Subject = "Merci d'avoir confirmé votre email",
+                    PlainTextContent = "Merci d'avoir confirmé votre email sur notre plateforme."
+                };
+                msg.AddTo(new EmailAddress(user.Email));
 
-                var message = MessageResource.Create(
-                    body: "Merci d'avoir confirmé votre email.",
-                    from: new Twilio.Types.PhoneNumber(fromPhoneNumber),
-                    to: new Twilio.Types.PhoneNumber(user.PhoneNumber));
+                var response = await client.SendEmailAsync(msg);
 
-                Console.WriteLine($"Twilio Message SID: {message.Sid}");
-                Console.WriteLine($"Twilio Message Error Message: {message.ErrorMessage}");
+                if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
+                {
+                    // Envoi du SMS
+                    var twilioSettings = _configuration.GetSection("TwilioSettings");
+                    var accountSid = twilioSettings["AccountSId"];
+                    var authToken = twilioSettings["AuthToken"];
+                    var twilioPhoneNumber = twilioSettings["FromPhoneNumber"];
 
-                // Redirection vers la page d'accueil ou une autre page après confirmation
-                return RedirectToPage("/Index");
+                    TwilioClient.Init(accountSid, authToken);
+
+                    var message = MessageResource.Create(
+                        body: "Merci d'avoir confirmé votre email sur notre plateforme.",
+                        from: new Twilio.Types.PhoneNumber(twilioPhoneNumber),
+                        to: new Twilio.Types.PhoneNumber(user.PhoneNumber) 
+                    );
+
+                    // Redirection vers la page d'accueil ou une autre page après confirmation
+                    return RedirectToPage("/Index");
+                }
+                else
+                {
+                    // Gérer l'échec de l'envoi du courriel
+                    _logger.LogError($"Error sending email. Status code: {response.StatusCode}");
+                    _logger.LogError($"SendGrid Response: {await response.Body.ReadAsStringAsync()}");
+                    return Page();
+                }
             }
             else
             {
+                // Gérer l'échec de la confirmation de l'email
                 _logger.LogError("Error confirming email.");
-                return Page(); // Affichez un message d'erreur sur la page de confirmation d'email.
+                return Page();
             }
         }
     }
