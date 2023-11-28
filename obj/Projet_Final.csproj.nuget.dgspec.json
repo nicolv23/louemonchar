@@ -87,9 +87,9 @@
               "target": "Package",
               "version": "[1.0.1, )"
             },
-            "Twilio": {
+            "Twilio.AspNet.Core": {
               "target": "Package",
-              "version": "[7.0.0-rc.1, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [

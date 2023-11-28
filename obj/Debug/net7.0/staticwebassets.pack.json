@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\Projet_Final.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\css\\carroussel.css",
+      "PackagePath": "staticwebassets\\css\\carroussel.css"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\css\\experiences.css",
+      "PackagePath": "staticwebassets\\css\\experiences.css"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\css\\serviceaccueil.css",
+      "PackagePath": "staticwebassets\\css\\serviceaccueil.css"
+    },
+    {
       "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -13,8 +33,80 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\about\\abouthome.jpg",
+      "PackagePath": "staticwebassets\\images\\about\\abouthome.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_1.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_2.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_3.jpeg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_4.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_5.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\carroussel\\carroussel_6.jpg",
+      "PackagePath": "staticwebassets\\images\\carroussel\\carroussel_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\icons\\limousine.png",
+      "PackagePath": "staticwebassets\\images\\icons\\limousine.png"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\logos\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\logos\\logoblanc.png",
+      "PackagePath": "staticwebassets\\images\\logos\\logoblanc.png"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\services\\service_1.jpeg",
+      "PackagePath": "staticwebassets\\images\\services\\service_1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\services\\service_2.jpg",
+      "PackagePath": "staticwebassets\\images\\services\\service_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\services\\service_3.jpg",
+      "PackagePath": "staticwebassets\\images\\services\\service_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\images\\services\\serviceparallax.jpg",
+      "PackagePath": "staticwebassets\\images\\services\\serviceparallax.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\js\\carroussel.js",
+      "PackagePath": "staticwebassets\\js\\carroussel.js"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\js\\experiences.js",
+      "PackagePath": "staticwebassets\\js\\experiences.js"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
+    },
+    {
       "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\js\\messagerie.js",
       "PackagePath": "staticwebassets\\js\\messagerie.js"
+    },
+    {
+      "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\js\\services.js",
+      "PackagePath": "staticwebassets\\js\\services.js"
     },
     {
       "Id": "C:\\Users\\jchri\\locationvoiture\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
