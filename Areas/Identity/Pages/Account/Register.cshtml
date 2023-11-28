@@ -32,17 +32,17 @@
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
                     </div>
                     <div class="form-floating mb-3">
-                        <input asp-for="Input.Telephone" class="form-control" autocomplete="tel" placeholder="Phone number" />
+                        <input asp-for="Input.Telephone" class="form-control" autocomplete="tel" placeholder="Numero de Telephone" />
                         <label asp-for="Input.Telephone">Numéro de Téléphone</label>
                         <span asp-validation-for="Input.Telephone" class="text-danger"></span>
                     </div>
                     <div class="form-floating mb-3">
-                        <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Mot de passe" />
                         <label asp-for="Input.Password">Mot de Passe</label>
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
                     <div class="form-floating mb-3">
-                        <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                        <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Mot de passe" />
                         <label asp-for="Input.ConfirmPassword">Confirmer Mot de Passe</label>
                         <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                     </div>
@@ -50,6 +50,7 @@
                         <input asp-for="Input.TwoFactorEnabled" class="form-check-input" />
                         <label class="form-check-label" asp-for="Input.TwoFactorEnabled">Activer l'authentification à deux facteurs sur SMS</label>
                     </div>
+
                     <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">S'inscrire</button>
                     @if (TempData["SuccessMessage"] != null)
                     {
