@@ -65,10 +65,10 @@ namespace Projet_Final.Areas.Identity.Pages.Account
 
                     TwilioClient.Init(accountSid, authToken);
 
-                    var message = await MessageResource.CreateAsync(
+                    var message = MessageResource.Create(
                         body: "Votre compte a été verrouillé pour des mesures de sécurité, veuillez contacter l'administrateur.",
                         from: new Twilio.Types.PhoneNumber(fromPhoneNumber),
-                        to: new Twilio.Types.PhoneNumber("+" + user.PhoneNumber)
+                        to: new Twilio.Types.PhoneNumber(user.PhoneNumber)
                     );
 
                     if (emailResponse.StatusCode == System.Net.HttpStatusCode.Accepted && message != null)
