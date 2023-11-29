@@ -54,10 +54,13 @@ builder.Services.Configure<IdentityOptions>(options =>
 });
 
 builder.Services.AddSingleton<TestData>();
+
+//SendGrid
 builder.Services.AddSendGrid(options => {
     options.ApiKey = builder.Configuration.GetSection("SendGridSettings")
     .GetValue<string>("ApiKey");
 });
+
 builder.Services.AddScoped<IEmailSender, EmailSenderService>();
 builder.Services.AddTransient<IEmailSender, EmailSenderService>();
 builder.Services.AddScoped<ISMSSenderService, SMSSenderService>();

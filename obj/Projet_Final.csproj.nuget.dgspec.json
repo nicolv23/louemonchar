@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antoi\\Desktop\\locationvoiture\\Projet_Final.csproj": {}
+    "C:\\Users\\jchri\\locationvoiture\\Projet_Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antoi\\Desktop\\locationvoiture\\Projet_Final.csproj": {
+    "C:\\Users\\jchri\\locationvoiture\\Projet_Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antoi\\Desktop\\locationvoiture\\Projet_Final.csproj",
+        "projectUniqueName": "C:\\Users\\jchri\\locationvoiture\\Projet_Final.csproj",
         "projectName": "Projet_Final",
-        "projectPath": "C:\\Users\\antoi\\Desktop\\locationvoiture\\Projet_Final.csproj",
-        "packagesPath": "C:\\Users\\antoi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antoi\\Desktop\\locationvoiture\\obj\\",
+        "projectPath": "C:\\Users\\jchri\\locationvoiture\\Projet_Final.csproj",
+        "packagesPath": "C:\\Users\\jchri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jchri\\locationvoiture\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\antoi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jchri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,9 +87,9 @@
               "target": "Package",
               "version": "[1.0.1, )"
             },
-            "Twilio": {
+            "Twilio.AspNet.Core": {
               "target": "Package",
-              "version": "[7.0.0-rc.1, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -106,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
