@@ -871,7 +871,6 @@ C:\Users\jchri\locationvoiture\bin\Debug\net7.0\NuGet.Packaging.dll
 C:\Users\jchri\locationvoiture\bin\Debug\net7.0\NuGet.ProjectModel.dll
 C:\Users\jchri\locationvoiture\bin\Debug\net7.0\NuGet.Protocol.dll
 C:\Users\jchri\locationvoiture\bin\Debug\net7.0\NuGet.Versioning.dll
-C:\Users\jchri\locationvoiture\bin\Debug\net7.0\nunit.framework.dll
 C:\Users\jchri\locationvoiture\bin\Debug\net7.0\SendGrid.dll
 C:\Users\jchri\locationvoiture\bin\Debug\net7.0\SendGrid.Extensions.DependencyInjection.dll
 C:\Users\jchri\locationvoiture\bin\Debug\net7.0\StarkbankEcdsa.dll
@@ -1599,3 +1598,6 @@ C:\Users\antoi\Desktop\locationvoiture\obj\Debug\net7.0\refint\Projet_Final.dll
 C:\Users\antoi\Desktop\locationvoiture\obj\Debug\net7.0\Projet_Final.pdb
 C:\Users\antoi\Desktop\locationvoiture\obj\Debug\net7.0\Projet_Final.genruntimeconfig.cache
 C:\Users\antoi\Desktop\locationvoiture\obj\Debug\net7.0\ref\Projet_Final.dll
+C:\Users\jchri\locationvoiture\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\jchri\locationvoiture\bin\Debug\net7.0\Twilio.AspNet.Common.dll
+C:\Users\jchri\locationvoiture\bin\Debug\net7.0\Twilio.AspNet.Core.dll

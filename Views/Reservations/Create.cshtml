@@ -4,41 +4,41 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Créer</h1>
 
-<h4>Reservation</h4>
+<h4>Réservation</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="VoitureId" class="control-label"></label>
+                <label asp-for="VoitureId" class="control-label">ID Voiture</label>
                 <select asp-for="VoitureId" class ="form-control" asp-items="ViewBag.VoitureId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="ClientId" class="control-label"></label>
+                <label asp-for="ClientId" class="control-label">ID Client</label>
                 <select asp-for="ClientId" class ="form-control" asp-items="ViewBag.ClientId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="DateDebut" class="control-label"></label>
+                <label asp-for="DateDebut" class="control-label">Date de Début</label>
                 <input asp-for="DateDebut" class="form-control" />
                 <span asp-validation-for="DateDebut" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DateFin" class="control-label"></label>
+                <label asp-for="DateFin" class="control-label">Date de Fin</label>
                 <input asp-for="DateFin" class="form-control" />
                 <span asp-validation-for="DateFin" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Créer" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Retour à la liste</a>
 </div>
 
 @section Scripts {
