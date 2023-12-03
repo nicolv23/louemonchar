@@ -1,0 +1,36 @@
+﻿@model List<Projet_Final.Areas.Identity.Data.ApplicationUtilisateur>
+
+<h1>Liste des Utilisateurs</h1>
+
+<form method="get">
+    <p>
+        <input type="text" name="rechercheUtilisateur" placeholder="Rechercher par nom, prénom, adresse courriel, etc." />
+        <button type="submit">Rechercher</button>
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Prenom</th>
+            <th>Nom de famille</th>
+            <th>Nom d'utilisateur</th>
+            <th>Adresse courriel</th>
+            <th>Numéro de téléphone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var utilisateur in Model)
+        {
+            <tr>
+                <td>@utilisateur.Id</td>
+                <td>@utilisateur.FirstName</td>
+                <td>@utilisateur.LastName</td>
+                <td>@utilisateur.UserName</td>
+                <td>@utilisateur.Email</td>
+                <td>@utilisateur.PhoneNumber</td>
+            </tr>
+        }
+    </tbody>
+</table>
