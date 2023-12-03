@@ -108,10 +108,10 @@ using (var scope = app.Services.CreateScope())
     var userManager = services.GetRequiredService<UserManager<ApplicationUtilisateur>>();
 
     // Vérifier si un administrateur existe déjà
-    var adminUser = await userManager.FindByEmailAsync("admin@gmail.com");
+    var utilisateurAdmin = await userManager.FindByEmailAsync("admin@gmail.com");
 
     // Si aucun administrateur n'existe, créez-en un
-    if (adminUser == null)
+    if (utilisateurAdmin == null)
     {
         var admin = new ApplicationUtilisateur
         {
@@ -121,20 +121,20 @@ using (var scope = app.Services.CreateScope())
             LastName = "Test"
         };
 
-        var createAdmin = await userManager.CreateAsync(admin, "test1234!");
+        var creerAdmin = await userManager.CreateAsync(admin, "test1234!");
 
-        if (createAdmin.Succeeded)
+        if (creerAdmin.Succeeded)
         {
             // Ajoutez le rôle d'administrateur à l'utilisateur
-            var addToRoleResult = await userManager.AddToRoleAsync(admin, "Admin");
+            var ajouterRole = await userManager.AddToRoleAsync(admin, "Admin");
 
-            if (!addToRoleResult.Succeeded)
+            if (!ajouterRole.Succeeded)
             {
                 // Gérez l'échec d'ajout de rôle ici
                 // Vous pouvez logger l'erreur ou prendre des mesures appropriées
 
                 // Exemple de journalisation de l'erreur
-                logger.LogError("Échec lors de l'ajout du rôle à l'utilisateur : {Error}", addToRoleResult.Errors);
+                logger.LogError("Échec lors de l'ajout du rôle à l'utilisateur : {Error}", ajouterRole.Errors);
             }
         }
         else
@@ -143,7 +143,7 @@ using (var scope = app.Services.CreateScope())
             // Vous pouvez logger l'erreur ou prendre des mesures appropriées
 
             // Exemple de journalisation de l'erreur
-            logger.LogError("Échec lors de la création de l'utilisateur : {Error}", createAdmin.Errors);
+            logger.LogError("Échec lors de la création de l'utilisateur : {Error}", creerAdmin.Errors);
         }
     }
 
