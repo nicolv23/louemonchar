@@ -2,13 +2,22 @@
 
 @{
     ViewData["Title"] = "Index";
+    string rechercheValue = ViewData["RechercheValue"] as string ?? "";
 }
 
 <h1>Liste Voitures</h1>
 
+<form method="get">
+    <p>
+        <input type="text" name="recherche" placeholder="Rechercher par marque, modèle, année, prix..." value="@rechercheValue" />
+        <button type="submit">Rechercher</button>
+    </p>
+</form>
+
 <p>
     <a asp-action="Create">Créer nouvelle voiture</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -32,32 +41,33 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Marque)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Modèle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Année)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrixJournalier)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EstDisponible)
-            </td>
-            <td>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marque)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Modèle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Année)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PrixJournalier)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EstDisponible)
+                </td>
+                <td>
                     <a asp-action="Viewpayer">Réservé</a>
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Modifier</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Détails</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Supprimer</a>
-            </td>
-        </tr>
-}
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Modifier</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Détails</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Supprimer</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
