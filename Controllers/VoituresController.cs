@@ -19,12 +19,29 @@ namespace Projet_Final.Controllers
             _context = context;
         }
 
+        [HttpGet]
         // GET: Voitures
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string recherche)
         {
-              return _context.Voitures != null ? 
-                          View(await _context.Voitures.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Voitures'  is null.");
+            ViewData["Title"] = "Index";
+            IQueryable<Voiture> voitures = _context.Voitures;
+
+            if (!string.IsNullOrEmpty(recherche))
+            {
+                voitures = voitures.Where(v =>
+                    EF.Functions.Like(v.Marque, $"%{recherche}%") ||
+                    EF.Functions.Like(v.Modèle, $"%{recherche}%") ||
+                    EF.Functions.Like(v.Année.ToString(), $"%{recherche}%") ||
+                    EF.Functions.Like(v.PrixJournalier.ToString(), $"%{recherche}%") ||
+                    EF.Functions.Like(v.EstDisponible.ToString(), $"%{recherche}%")
+                );
+            }
+
+            ViewData["RechercheValue"] = recherche; // Passer la valeur de recherche à la vue
+
+            var voituresList = await voitures.ToListAsync(); // Récupérer les résultats de la recherche
+
+            return View(voituresList); // Passer la liste filtrée à la vue
         }
 
         // GET: Voitures/Details/5
