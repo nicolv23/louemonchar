@@ -51,18 +51,19 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NuméroTéléphone)
             </td>
+            
             @if (SignInManager.IsSignedIn(User))
-{
+            {
             var user = await UserManager.GetUserAsync(User);
             if (await UserManager.IsInRoleAsync(user, "Admin"))
-            {
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a> |
-                <a asp-action="Details" asp-route-id="@item.ClientId">Détails</a> |
-                <a asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
-            </td>
+                {
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a> |
+                    <a asp-action="Details" asp-route-id="@item.ClientId">Détails</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
+                </td>
+                }
             }
-}
         </tr>
 }
     </tbody>
