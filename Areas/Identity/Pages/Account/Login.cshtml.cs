@@ -15,6 +15,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Projet_Final.Areas.Identity.Data;
+using System.Net.Mail;
+using SendGrid.Helpers.Mail;
+using SendGrid;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
 
 namespace Projet_Final.Areas.Identity.Pages.Account
 {
@@ -22,11 +27,16 @@ namespace Projet_Final.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<ApplicationUtilisateur> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly IEmailSender _emailSender;
+        private readonly IConfiguration _configuration;
 
-        public LoginModel(SignInManager<ApplicationUtilisateur> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<ApplicationUtilisateur> signInManager, ILogger<LoginModel> logger, IEmailSender emailSender,
+            IConfiguration configuration)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _emailSender = emailSender;
+            _configuration = configuration;
         }
 
         /// <summary>
@@ -121,28 +131,87 @@ namespace Projet_Final.Areas.Identity.Pages.Account
                         _logger.LogInformation("User logged in.");
                         return LocalRedirect(returnUrl);
                     }
-                    if (result.RequiresTwoFactor)
+                    else if (result.IsNotAllowed)
+                    {
+                        ModelState.AddModelError(string.Empty, "Veuillez confirmer votre adresse e-mail.");
+                    }
+                    else if (result.RequiresTwoFactor)
                     {
                         return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
                     }
-                    if (result.IsLockedOut)
+                    else if (result.IsLockedOut)
                     {
                         _logger.LogWarning("User account locked out.");
+
+                        // Récupérez l'utilisateur bloqué
+                        user = await _signInManager.UserManager.FindByEmailAsync(Input.Email);
+
+                        // Envoi d'un courriel via SendGrid lorsque le compte est bloqué
+                        var sendGridSettings = _configuration.GetSection("SendGridSettings");
+                        var apiKey = sendGridSettings["ApiKey"];
+                        var senderEmail = sendGridSettings["FromEmail"];
+                        var senderName = sendGridSettings["EmailName"];
+
+                        var client = new SendGridClient(apiKey);
+                        var emailMsg = new SendGridMessage()
+                        {
+                            From = new EmailAddress(senderEmail, senderName),
+                            Subject = "Notification de verrouillage de compte",
+                            PlainTextContent = "Votre compte a été verrouillé pour des raisons de sécurité. Veuillez contacter l'administrateur."
+                        };
+                        emailMsg.AddTo(new EmailAddress(user.Email));
+
+                        var response = await client.SendEmailAsync(emailMsg);
+
+                        if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
+                        {
+                            // L'email a été envoyé avec succès
+                            _logger.LogInformation("Email envoyé avec succès.");
+                        }
+                        else
+                        {
+                            // Gérer l'échec de l'envoi de l'email
+                            _logger.LogError($"Échec de l'envoi de l'email. Code d'état : {response.StatusCode}");
+                        }
+
+                        // Envoi d'un SMS via Twilio lorsque le compte est bloqué
+                        if (!string.IsNullOrEmpty(user.PhoneNumber))
+                        {
+                            var twilioSettings = _configuration.GetSection("TwilioSettings");
+                            var accountSid = twilioSettings["AccountSId"];
+                            var authToken = twilioSettings["AuthToken"];
+                            var fromPhoneNumber = twilioSettings["FromPhoneNumber"];
+
+                            TwilioClient.Init(accountSid, authToken);
+
+                            var phoneNumber = user.PhoneNumber;
+                            var message = "Votre compte a été verrouillé pour des raisons de sécurité. Veuillez contacter l'administrateur.";
+
+                            var twilioMessage = MessageResource.Create(
+                                body: message,
+                                from: new Twilio.Types.PhoneNumber(fromPhoneNumber),
+                                to: new Twilio.Types.PhoneNumber(phoneNumber)
+                            );
+
+                            if (twilioMessage.Status == MessageResource.StatusEnum.Sent)
+                            {
+                                // Le message a été envoyé avec succès
+                                _logger.LogInformation("SMS envoyé avec succès.");
+
+                            }
+                            else
+                            {
+                                // Le message n'a pas pu être envoyé
+                                _logger.LogError("Échec de l'envoi du SMS.");
+
+                            }
+                        }
+
                         return RedirectToPage("./Lockout");
                     }
-                }
-
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-
-                if (user != null)
-                {
-                    // Augmenter le nombre de tentatives de connexion infructueuses
-                    await _signInManager.UserManager.AccessFailedAsync(user);
-                    if (await _signInManager.UserManager.IsLockedOutAsync(user))
+                    else
                     {
-                        // Le compte est verrouillé
-                        _logger.LogWarning("User account locked out.");
-                        return RedirectToPage("./Lockout");
+                        ModelState.AddModelError(string.Empty, "Le mot de passe ne correspond pas à l'adresse e-mail.");
                     }
                 }
             }
