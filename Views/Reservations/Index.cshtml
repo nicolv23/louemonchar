@@ -33,12 +33,7 @@
         </tr>
     </thead>
     <tbody>
-        @if (SignInManager.IsSignedIn(User))
-        {
-            var user = await UserManager.GetUserAsync(User);
-            if (await UserManager.IsInRoleAsync(user, "Admin"))
-            {
-                @foreach (var item in Model)
+                @foreach (var item in Model )
                 {
                     <tr>
                         <td>
@@ -53,22 +48,25 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.DateFin)
                         </td>
+                        @if (SignInManager.IsSignedIn(User))
+                {
+                    var user = await UserManager.GetUserAsync(User);
+                    if (await UserManager.IsInRoleAsync(user, "Admin"))
+                    {
                         <td>
                             <a asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a> |
                             <a asp-action="Details" asp-route-id="@item.ClientId">Détails</a> |
                             <a asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
                         </td>
+                }
+                }
                         <td>
                             <a asp-action="Viewpayer">Changer mon mode de paiement</a>
                         </td>
                     </tr>
                 }
-            }
-        }
-        else
-        {
             
-        }
+     
 
 
     </tbody>
