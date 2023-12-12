@@ -33,36 +33,43 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Voiture.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Client.ClientId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateDebut)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateFin)
-            </td>
-                @if (SignInManager.IsSignedIn(User))
+        @if (SignInManager.IsSignedIn(User))
+        {
+            var user = await UserManager.GetUserAsync(User);
+            if (await UserManager.IsInRoleAsync(user, "Admin"))
+            {
+                @foreach (var item in Model)
                 {
-                    var user = await UserManager.GetUserAsync(User);
-                    if (await UserManager.IsInRoleAsync(user, "Admin"))
-                    {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Voiture.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Client.ClientId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateDebut)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateFin)
+                        </td>
                         <td>
                             <a asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a> |
                             <a asp-action="Details" asp-route-id="@item.ClientId">Détails</a> |
                             <a asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
                         </td>
-                    }
+                        <td>
+                            <a asp-action="Viewpayer">Changer mon mode de paiement</a>
+                        </td>
+                    </tr>
                 }
-            <td>    
-                    <a asp-action="Viewpayer">Changer mon mode de paiement</a>
-            </td>
-        </tr>
-}
+            }
+        }
+        else
+        {
+            
+        }
+
+
     </tbody>
 </table>
