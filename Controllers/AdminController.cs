@@ -39,5 +39,133 @@ namespace Projet_Final.Controllers
 
             return View(utilisateurs);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var utilisateur = await _userManager.FindByIdAsync(id);
+
+            if (utilisateur == null)
+            {
+                return NotFound();
+            }
+
+            return View(utilisateur);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var utilisateur = await _userManager.FindByIdAsync(id);
+
+            if (utilisateur == null)
+            {
+                return NotFound();
+            }
+
+            return View(utilisateur);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, [Bind("Id,FirstName,LastName,Email,PhoneNumber")] ApplicationUtilisateur utilisateur)
+        {
+            if (id != utilisateur.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var user = await _userManager.FindByIdAsync(id);
+
+                    user.FirstName = utilisateur.FirstName;
+                    user.LastName = utilisateur.LastName;
+                    user.Email = utilisateur.Email;
+                    user.PhoneNumber = utilisateur.PhoneNumber;
+
+                    var result = await _userManager.UpdateAsync(user);
+
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction(nameof(Index));
+                    }
+
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!await _userManager.Users.AnyAsync(e => e.Id == id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+
+            return View(utilisateur);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var utilisateur = await _userManager.FindByIdAsync(id);
+
+            if (utilisateur == null)
+            {
+                return NotFound();
+            }
+
+            return View(utilisateur);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            var utilisateur = await _userManager.FindByIdAsync(id);
+
+            if (utilisateur == null)
+            {
+                return NotFound();
+            }
+
+            var result = await _userManager.DeleteAsync(utilisateur);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return View(utilisateur);
+        }
     }
 }
