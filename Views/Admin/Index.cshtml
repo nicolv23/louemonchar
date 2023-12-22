@@ -1,4 +1,5 @@
-﻿@model List<Projet_Final.Areas.Identity.Data.ApplicationUtilisateur>
+﻿@using System.Security.Claims
+@model List<Projet_Final.Areas.Identity.Data.ApplicationUtilisateur>
 
 <h1>Liste des Utilisateurs</h1>
 
@@ -33,9 +34,13 @@
                 <td>@utilisateur.PhoneNumber</td>
                 <td>
                     <a asp-action="Details" asp-route-id="@utilisateur.Id">Détails</a>
-                    <form asp-action="Delete" asp-route-id="@utilisateur.Id" method="post" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?');">
-                        <button type="submit">Effacer</button>
-                    </form>
+                    <!-- Vérification pour ne pas afficher le bouton "Effacer" si l'utilisateur est le compte Admin -->
+                    @if (!User.IsInRole("Admin") || User.FindFirstValue(ClaimTypes.NameIdentifier) != utilisateur.Id)
+                    {
+                        <form asp-action="Delete" asp-route-id="@utilisateur.Id" method="post" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?');">
+                            <button type="submit">Effacer</button>
+                        </form>
+                    }
                 </td>
             </tr>
         }
