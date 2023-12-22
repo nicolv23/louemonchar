@@ -10,42 +10,6 @@
     if (await UserManager.IsInRoleAsync(user, "Admin"))
     {
         <ul class="navbar-nav">
-            <!--Gestion Réservation Dropdown-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Gestion Réservation
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" asp-controller="Reservations" asp-action="Index">Index</a></li>
-                    <li><a class="dropdown-item" asp-controller="Reservations" asp-action="Create">Créer</a></li>
-                    <li><a class="dropdown-item" asp-controller="Reservations" asp-action="Delete">Supprimer</a></li>
-                    <li><a class="dropdown-item" asp-controller="Reservations" asp-action="Edit">Modifier</a></li>
-                </ul>
-            </li>
-            <!--Gestion Voiture Dropdown-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Gestion Voitures
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Voitures" asp-action="Index">Index</a></li>
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Voitures" asp-action="Create">Créer</a></li>
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Voitures" asp-action="Delete">Supprimer</a></li>
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Voitures" asp-action="Edit">Modifier</a></li>
-                </ul>
-            </li>
-            <!--Gestion Clients Dropdown-->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                    Gestion Clients
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Index">Index</a></li>
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Create">Créer</a></li>
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Delete">Supprimer</a></li>
-                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Edit">Modifier</a></li>
-                </ul>
-            </li>
             <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Reservations" asp-action="Index">Gestion réservations</a>
             </li>
