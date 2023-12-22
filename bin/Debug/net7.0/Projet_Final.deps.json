@@ -18,7 +18,8 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.9",
           "SendGrid": "9.28.1",
           "SendGrid.Extensions.DependencyInjection": "1.0.1",
-          "Twilio.AspNet.Core": "8.0.0"
+          "Twilio.AspNet.Core": "8.0.0",
+          "bootstrap": "5.3.2"
         },
         "runtime": {
           "Projet_Final.dll": {}
@@ -58,6 +59,7 @@
           }
         }
       },
+      "bootstrap/5.3.2": {},
       "Humanizer/2.14.1": {
         "dependencies": {
           "Humanizer.Core.af": "2.14.1",
@@ -2897,6 +2899,13 @@
       "sha512": "sha512-eHEiCO/8+MfNc9nH5dVew/+FvxdaGrkRL4OMNwIz0W79+wtJyEoeRlXJ3SrXhoy9XR58geBYKmzMR83VO7bcAw==",
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
+    },
+    "bootstrap/5.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m0/GEaLwE35B8P1xScFhwAsQi5o6kWPzOVPdGkoFwv+5YjmbgXFPQai71N5APwRCU52ZO4vHYWJ5DYSqKKgivw==",
+      "path": "bootstrap/5.3.2",
+      "hashPath": "bootstrap.5.3.2.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",

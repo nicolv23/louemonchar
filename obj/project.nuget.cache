@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IdqEdXTzkduohpvdz5zC/8TphVBM26n3arCp3t87aICRO+yZ7gX6qmwFthYWsl2oFQjszk/tFkUEzcp0DSjtJg==",
+  "dgSpecHash": "jWz8GCWHSbrafccg0DioUOGk44zh/1TmXb8R7K8mV7BYgMuJYi4+hS+AeywZCiVoq2FlWWAtr/S72Om9FMkgVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jchri\\locationvoiture\\Projet_Final.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jchri\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\jchri\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\jchri\\.nuget\\packages\\bootstrap\\5.3.2\\bootstrap.5.3.2.nupkg.sha512",
     "C:\\Users\\jchri\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\jchri\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jchri\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
