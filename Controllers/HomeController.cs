@@ -31,6 +31,12 @@ namespace Projet_Final.Controllers
             return View();
         }
 
+        public IActionResult ListeModeles()
+        {
+            var voitures = _dbContext.Voitures.ToList();
+            return View(voitures);
+        }
+
         public IActionResult Privacy()
         {
             return View();

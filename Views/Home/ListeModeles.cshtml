@@ -1,0 +1,25 @@
+﻿@model List<Projet_Final.Models.Voiture>
+
+@{
+    ViewData["Title"] = "Liste des Modèles de Voitures";
+}
+
+<h1>Liste des Modèles de Voitures</h1>
+
+<div class="container">
+    <div class="row">
+        @foreach (var voiture in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@Url.Content(voiture.ImageVoiture)" class="card-img-top" alt="Image de la voiture">
+                    <div class="card-body">
+                        <h5 class="card-title">@voiture.Modèle</h5>
+                        <p class="card-text">Prix : $@voiture.PrixJournalier</p>
+                        <a href="@Url.Action("Details", "Voitures", new { id = voiture.Id })" class="btn btn-primary">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

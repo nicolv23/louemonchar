@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Marque" class="control-label"></label>
@@ -36,6 +36,11 @@
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="EstDisponible" /> @Html.DisplayNameFor(model => model.EstDisponible)
                 </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageVoiture" class="control-label">Sélectionner une image</label>
+                <input type="file" name="ImageVoiture" />
+                <span asp-validation-for="ImageVoiture" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Créer" class="btn btn-primary" />

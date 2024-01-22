@@ -14,5 +14,6 @@ namespace Projet_Final.Models
         [Column(TypeName = "decimal(18, 2)")]
         public decimal PrixJournalier { get; set; }
         public bool EstDisponible { get; set; }
+        public string ImageVoiture { get; set; }
     }
 }
