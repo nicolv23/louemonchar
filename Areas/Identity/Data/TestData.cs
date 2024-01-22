@@ -15,7 +15,8 @@ namespace Projet_Final.Models
                     Modèle = "Corolla",
                     Année = 2022,
                     PrixJournalier = 50.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/toyota_corolla.jpg"
                 },
                 new Voiture
                 {
@@ -23,7 +24,8 @@ namespace Projet_Final.Models
                     Modèle = "Civic",
                     Année = 2023,
                     PrixJournalier = 55.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/honda_civic.jpg"
                 },
                 new Voiture
                 {
@@ -31,7 +33,8 @@ namespace Projet_Final.Models
                     Modèle = "Mustang",
                     Année = 2022,
                     PrixJournalier = 70.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/ford_mustang.jpg"
                 },
                 new Voiture
                 {
@@ -39,7 +42,8 @@ namespace Projet_Final.Models
                     Modèle = "Camaro",
                     Année = 2023,
                     PrixJournalier = 75.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/chevrolet_camaro.jpeg"
                 },
                 new Voiture
                 {
@@ -47,7 +51,8 @@ namespace Projet_Final.Models
                     Modèle = "Model S",
                     Année = 2023,
                     PrixJournalier = 100.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/tesla_modele_s.jpeg"
                 },
                 new Voiture
                 {
@@ -55,7 +60,8 @@ namespace Projet_Final.Models
                     Modèle = "M3",
                     Année = 2022,
                     PrixJournalier = 80.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/bmw_m3.jpeg"
                 },
                 new Voiture
                 {
@@ -63,7 +69,8 @@ namespace Projet_Final.Models
                     Modèle = "A4",
                     Année = 2023,
                     PrixJournalier = 65.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/audi_a4.jpeg"
                 },
                 new Voiture
                 {
@@ -71,7 +78,8 @@ namespace Projet_Final.Models
                     Modèle = "C-Class",
                     Année = 2022,
                     PrixJournalier = 90.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/mercedes_classe_c.jpeg"
                 },
                 new Voiture
                 {
@@ -79,7 +87,8 @@ namespace Projet_Final.Models
                     Modèle = "Huracan",
                     Année = 2023,
                     PrixJournalier = 500.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/lamborghini_huracan.jpeg"
                 },
                 new Voiture
                 {
@@ -87,7 +96,8 @@ namespace Projet_Final.Models
                     Modèle = "488 GTB",
                     Année = 2023,
                     PrixJournalier = 600.00m,
-                    EstDisponible = true
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/ferrari_488gtb.jpg"
                 }
             };
         }

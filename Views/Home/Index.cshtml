@@ -18,7 +18,7 @@
             <p>Découvrez notre large gamme de véhicules disponibles pour la location.</p>
             <br />
 
-            <a class="btn btn-primary" asp-controller="Voitures" asp-action="Index">Voir les voitures disponibles</a>
+            <a href="@Url.Action("ListeModeles", "Home")">Voir toutes les modèles de voitures</a>
         </div>
     </div>
 
@@ -134,58 +134,27 @@
 
 
 
-<!-- Carroussel-->
-    <!-- Dans votre vue (par exemple, Index.cshtml) -->
+    <!-- Carroussel-->
     <div class="container">
         <div class="slider">
             <div class="slider-inner">
-                <div class="slider-item">
-                    <div class="box">
-                        <img src="~/images/carroussel/carroussel_1.jpg" alt="Photo 1">
-                        <h2>Titre de la photo 1</h2>
-                        <p>Prix : $XX.XX</p>
-                        <button class="btn btn-louer">Bouton 1</button>
-                        <button class="btn btn-retour">Bouton 2</button>
+                @foreach (var voiture in ViewData["Voitures"] as List<Voiture>)
+                {
+                    <div class="slider-item">
+                        <div class="box">
+                            <h2>@($"{voiture.Marque} {voiture.Modèle}")</h2>
+                            <img src="@Url.Content(voiture.ImageVoiture)" class="card-img-top voiture-image" alt="Image de la voiture">
+                            <p>Prix : $@voiture.PrixJournalier</p>
+                            <div class="button-container">
+                                <a href="@Url.Action("Details", "Voitures", new { id = voiture.Id })" class="btn btn-louer">Voir le modèle spécifique de voiture</a>
+                                <button class="btn btn-retour">Bouton 2</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- Répétez la structure ci-dessus pour chaque élément du carrousel -->
-                <div class="slider-item">
-                    <div class="box">
-                        <img src="~/images/carroussel/carroussel_2.jpg" alt="Photo 2">
-                        <h2>Titre de la photo 2</h2>
-                        <p>Prix : $XX.XX</p>
-                        <button class="btn btn-louer">Bouton 1</button>
-                        <button class="btn btn-retour">Bouton 2</button>
-                    </div>
-                </div>
-                <!-- Répétez la structure ci-dessus pour chaque élément du carrousel -->
-                <div class="slider-item">
-                    <div class="box">
-                        <img src="~/images/carroussel/carroussel_3.jpeg" alt="Photo 2">
-                        <h2>Titre de la photo 2</h2>
-                        <p>Prix : $XX.XX</p>
-                        <button class="btn btn-louer">Bouton 1</button>
-                        <button class="btn btn-retour">Bouton 2</button>
-                    </div>
-                </div>
-                <!-- Répétez la structure ci-dessus pour chaque élément du carrousel -->
-                <div class="slider-item">
-                    <div class="box">
-                        <img src="~/images/carroussel/carroussel_4.jpg" alt="Photo 2">
-                        <h2>Titre de la photo 2</h2>
-                        <p>Prix : $XX.XX</p>
-                        <button class="btn btn-louer">Bouton 1</button>
-                        <button class="btn btn-retour">Bouton 2</button>
-                    </div>
-                </div>
-                <!-- Ajoutez d'autres éléments selon le même modèle
-                </div>
-                <div class="control">
-                    <button id="prev"><span>&ltrif;</span></button>
-                    <button id="next"><span>&rtrif;</span></button>
-                    </div>-->
+                }
             </div>
         </div>
+    </div>
 
 
 
