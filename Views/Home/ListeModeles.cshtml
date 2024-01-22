@@ -11,11 +11,18 @@
         @foreach (var voiture in Model)
         {
             <div class="col-md-4 mb-4">
-                <div class="card">
+                <div class="card card-hover">
+                    <style>
+                        .card-hover:hover {
+                            transform: scale(1.05);
+                            transition: transform 0.3s ease; 
+                            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+                        }
+                    </style>
                     <img src="@Url.Content(voiture.ImageVoiture)" class="card-img-top" alt="Image de la voiture">
                     <div class="card-body">
-                        <h5 class="card-title">@voiture.Modèle</h5>
-                        <p class="card-text">Prix : $@voiture.PrixJournalier</p>
+                        <h5 class="card-title">@($"{voiture.Marque} {voiture.Modèle}")</h5>
+                        <p class="card-text">Prix de location par jour : $@voiture.PrixJournalier</p>
                         <a href="@Url.Action("Details", "Voitures", new { id = voiture.Id })" class="btn btn-primary">Voir les détails</a>
                     </div>
                 </div>
