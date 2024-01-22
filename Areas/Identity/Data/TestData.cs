@@ -70,7 +70,7 @@ namespace Projet_Final.Models
                     Année = 2023,
                     PrixJournalier = 65.00m,
                     EstDisponible = true,
-                    ImageVoiture = "~/images/voitures/audi_a4.jpeg"
+                    ImageVoiture = "~/images/voitures/audi_a4.jpg"
                 },
                 new Voiture
                 {
@@ -88,7 +88,7 @@ namespace Projet_Final.Models
                     Année = 2023,
                     PrixJournalier = 500.00m,
                     EstDisponible = true,
-                    ImageVoiture = "~/images/voitures/lamborghini_huracan.jpeg"
+                    ImageVoiture = "~/images/voitures/lamborghini_huracan.jpg"
                 },
                 new Voiture
                 {
