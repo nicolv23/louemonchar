@@ -1,14 +1,23 @@
 ﻿@model IEnumerable<Projet_Final.Models.Client>
-
+@using Microsoft.AspNetCore.Identity
+@using Projet_Final.Areas.Identity.Data
+@inject SignInManager<ApplicationUtilisateur> SignInManager
+@inject UserManager<ApplicationUtilisateur> UserManager
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Liste Clients</h1>
-
-<p>
-    <a asp-action="Create">Créer nouveau client</a>
-</p>
+@if (SignInManager.IsSignedIn(User))
+{
+    var user = await UserManager.GetUserAsync(User);
+    if (await UserManager.IsInRoleAsync(user, "Admin"))
+    {
+        <p>
+            <a asp-action="Create">Créer nouveau client</a>
+        </p>
+    }
+}
 <table class="table">
     <thead>
         <tr>
@@ -42,11 +51,19 @@
             <td>
                 @Html.DisplayFor(modelItem => item.NuméroTéléphone)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a> |
-                <a asp-action="Details" asp-route-id="@item.ClientId">Détails</a> |
-                <a asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
-            </td>
+            
+            @if (SignInManager.IsSignedIn(User))
+            {
+            var user = await UserManager.GetUserAsync(User);
+            if (await UserManager.IsInRoleAsync(user, "Admin"))
+                {
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a> |
+                    <a asp-action="Details" asp-route-id="@item.ClientId">Détails</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
+                </td>
+                }
+            }
         </tr>
 }
     </tbody>

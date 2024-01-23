@@ -1,4 +1,8 @@
 ﻿@model IEnumerable<Projet_Final.Models.Reservation>
+@using Microsoft.AspNetCore.Identity
+@using Projet_Final.Areas.Identity.Data
+@inject SignInManager<ApplicationUtilisateur> SignInManager
+@inject UserManager<ApplicationUtilisateur> UserManager
 
 @{
     ViewData["Title"] = "Index";
@@ -9,6 +13,7 @@
 <p>
     <a asp-action="Create">Créer nouvelle Réservation</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -28,29 +33,41 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Voiture.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Client.ClientId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateDebut)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateFin)
-            </td>
-             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Modifier</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Détails</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Supprimer</a>
-            </td>
-            <td>    
-                    <a asp-action="Viewpayer">Changer mon mode de paiement</a>
-            </td>
-        </tr>
-}
+                @foreach (var item in Model )
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Voiture.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Client.ClientId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateDebut)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateFin)
+                        </td>
+                        @if (SignInManager.IsSignedIn(User))
+                {
+                    var user = await UserManager.GetUserAsync(User);
+                    if (await UserManager.IsInRoleAsync(user, "Admin"))
+                    {
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a> |
+                            <a asp-action="Details" asp-route-id="@item.ClientId">Détails</a> |
+                            <a asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
+                        </td>
+                }
+                }
+                        <td>
+                            <a asp-action="Viewpayer">Changer mon mode de paiement</a>
+                        </td>
+                    </tr>
+                }
+            
+     
+
+
     </tbody>
 </table>

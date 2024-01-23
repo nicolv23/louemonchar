@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Support Chat";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenue dans notre service de Support</h1>
+    <p>Si vous avez des questions, vous pouvez communiquer avec nous ici.</p>
+    <a class="btn btn-primary" asp-controller="Voitures" asp-action="Index">Voir les voitures disponibles</a>
+    <p>Utilisateur ID : @ViewData["UtilisateurID"]</p>
+</div>
+
+<div class="container">
+    <div>
+        <label>Nom: </label>
+        <input type="text" id="displayname" />
+    </div>
+
+    <div class="mt-5">
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+    </div>
+
+    <div class="mt-3">
+        <ul id="discussion"></ul>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/signalr@7.0.2/dist/browser/signalr.min.js"></script>
+<script>
+    var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+
+    connection.start().catch(function (err) {
+        return console.error(err.toString());
+    });
+
+    document.getElementById("sendmessage").addEventListener("click", function (event) {
+        var user = document.getElementById("displayname").value;
+        var message = document.getElementById("message").value;
+
+        connection.invoke("SendMessage", user, message).catch(function (err) {
+            return console.error(err.toString());
+        });
+
+        event.preventDefault();
+    });
+
+    connection.on("ReceiveMessage", function (user, message) {
+        var encodedMsg = user + ": " + message;
+        var li = document.createElement("li");
+
+        li.textContent = encodedMsg;
+        document.getElementById("discussion").appendChild(li);
+    });
+</script>

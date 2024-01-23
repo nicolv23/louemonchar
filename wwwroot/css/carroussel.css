@@ -51,7 +51,7 @@
 }
 
     .box img {
-        width: 100%;
+        width: 70%;
         border-radius: 8px;
     }
 
@@ -89,6 +89,15 @@ p {
     background-color: #ea7b12;
     color: white;
     border:hidden;
+}
+
+.voiture-image {
+    max-width: 50%;
+    height: auto;
+}
+
+.button-container {
+    margin-top: 10px;
 }
 
 @keyframes slideAnimation {

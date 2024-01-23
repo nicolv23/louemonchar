@@ -1,0 +1,44 @@
+﻿@model List<Projet_Final.Models.Voiture>
+
+@{
+    ViewData["Title"] = "Liste des Modèles de Voitures";
+}
+
+<div class="container">
+    <header class="text-center my-5">
+        <h1 class="display-3">Découvrez notre liste de Voitures</h1>
+        <p class="lead">Explorez notre sélection de modèles de voitures pour location.</p>
+    </header>
+
+    <div class="row">
+        @foreach (var voiture in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card card-hover">
+                    <style>
+                        .card-hover:hover {
+                            transform: scale(1.05);
+                            transition: transform 0.3s ease;
+                            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+                        }
+                    </style>
+                    <img src="@Url.Content(voiture.ImageVoiture)" class="card-img-top" alt="Image de la voiture">
+                    <div class="card-body">
+                        <h5 class="card-title">@($"{voiture.Marque} {voiture.Modèle}")</h5>
+                        <p class="card-text">Prix de location par jour : $@voiture.PrixJournalier</p>
+
+                        @if (voiture.EstDisponible)
+                        {
+                            <p class="text-success">Disponible</p>
+                            <a href="@Url.Action("Details", "Voitures", new { id = voiture.Id })" class="btn btn-primary">Voir les détails</a>
+                        }
+                        else
+                        {
+                            <p class="text-danger">Non disponible - Réservé</p>                           
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
