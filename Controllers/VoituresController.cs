@@ -13,10 +13,14 @@ namespace Projet_Final.Controllers
     public class VoituresController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _hostingEnvironment;
+        private readonly ILogger<VoituresController> _logger;
 
-        public VoituresController(ApplicationDbContext context)
+        public VoituresController(ApplicationDbContext context, IWebHostEnvironment hostingEnvironment, ILogger<VoituresController> logger)
         {
             _context = context;
+            _hostingEnvironment = hostingEnvironment;
+            _logger = logger; 
         }
 
         [HttpGet]
@@ -73,26 +77,58 @@ namespace Projet_Final.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Marque,Modèle,Année,PrixJournalier,EstDisponible")] Voiture voiture, IFormFile imageVoiture)
+        public async Task<IActionResult> Create([Bind("Id,Marque,Modèle,Année,PrixJournalier,EstDisponible,ImageVoiture")] Voiture voiture, IFormFile imageVoiture)
         {
             if (ModelState.IsValid)
             {
-                if (imageVoiture != null && imageVoiture.Length > 0)
+                try
                 {
-                    var fileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(imageVoiture.FileName);
-
-                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    if (imageVoiture != null && imageVoiture.Length > 0)
                     {
-                        await imageVoiture.CopyToAsync(fileStream);
-                    }
-                    voiture.ImageVoiture = "/images/voitures" + fileName; 
-                }
+                        // Vérifier l'extension du fichier
+                        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                        var fileExtension = Path.GetExtension(imageVoiture.FileName).ToLower();
 
-                _context.Add(voiture);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                        if (!allowedExtensions.Contains(fileExtension))
+                        {
+                            ModelState.AddModelError("ImageVoiture", "Seules les images avec les extensions .jpg, .jpeg, .png et .gif sont autorisées.");
+                            return View(voiture);
+                        }
+
+                        var fileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(imageVoiture.FileName);
+
+                        // Utilisez Path.Combine pour construire le chemin du fichier correctement
+                        var filePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", "voitures", fileName);
+
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            _logger.LogInformation("Avant la copie du fichier");
+                            await imageVoiture.CopyToAsync(fileStream);
+                            _logger.LogInformation("Après la copie du fichier");
+                        }
+
+
+                        voiture.ImageVoiture = Path.Combine("images", "voitures", fileName); 
+
+                        _logger.LogInformation("Image téléchargée avec succès");
+                    }
+
+                    _context.Add(voiture);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (IOException ioEx)
+                {
+                    _logger.LogError(ioEx, "Erreur d'entrée/sortie lors de la copie du fichier");
+                    ModelState.AddModelError(string.Empty, "Erreur d'entrée/sortie lors de la copie du fichier.");
+                    return View(voiture);
+                }
+                catch (UnauthorizedAccessException authEx)
+                {
+                    _logger.LogError(authEx, "Erreur d'autorisation lors de la copie du fichier");
+                    ModelState.AddModelError(string.Empty, "Erreur d'autorisation lors de la copie du fichier.");
+                    return View(voiture);
+                }
             }
 
             return View(voiture);
@@ -119,7 +155,7 @@ namespace Projet_Final.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Marque,Modèle,Année,PrixJournalier,EstDisponible")] Voiture voiture)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Marque,Modèle,Année,PrixJournalier,EstDisponible,ImageVoiture")] Voiture voiture, IFormFile nouvelleImageVoiture)
         {
             if (id != voiture.Id)
             {
@@ -130,8 +166,42 @@ namespace Projet_Final.Controllers
             {
                 try
                 {
+                    if (nouvelleImageVoiture != null && nouvelleImageVoiture.Length > 0)
+                    {
+                        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                        var fileExtension = Path.GetExtension(nouvelleImageVoiture.FileName).ToLower();
+
+                        if (!allowedExtensions.Contains(fileExtension))
+                        {
+                            ModelState.AddModelError("ImageVoiture", "Seules les images avec les extensions .jpg, .jpeg, .png et .gif sont autorisées.");
+                            return View(voiture);
+                        }
+
+                        var fileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(nouvelleImageVoiture.FileName);
+
+                        var filePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", "voitures", fileName);
+
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await nouvelleImageVoiture.CopyToAsync(fileStream);
+                        }
+
+                        // Supprimer l'ancienne image si elle existe
+                        if (!string.IsNullOrEmpty(voiture.ImageVoiture))
+                        {
+                            var ancienChemin = Path.Combine(_hostingEnvironment.WebRootPath, voiture.ImageVoiture);
+                            if (System.IO.File.Exists(ancienChemin))
+                            {
+                                System.IO.File.Delete(ancienChemin);
+                            }
+                        }
+
+                        voiture.ImageVoiture = Path.Combine("images", "voitures", fileName);
+                    }
+
                     _context.Update(voiture);
                     await _context.SaveChangesAsync();
+                    return Json(new { redirectUrl = Url.Action("Index") });
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -144,9 +214,21 @@ namespace Projet_Final.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                catch (IOException ioEx)
+                {
+                    _logger.LogError(ioEx, "Erreur d'entrée/sortie lors de la copie du fichier");
+                    ModelState.AddModelError(string.Empty, "Erreur d'entrée/sortie lors de la copie du fichier.");
+                    return Json(new { error = "Erreur d'entrée/sortie lors de la copie du fichier." });
+                }
+                catch (UnauthorizedAccessException authEx)
+                {
+                    _logger.LogError(authEx, "Erreur d'autorisation lors de la copie du fichier");
+                    ModelState.AddModelError(string.Empty, "Erreur d'autorisation lors de la copie du fichier.");
+                    return Json(new { error = "Erreur d'autorisation lors de la copie du fichier." });
+                }
             }
-            return View(voiture);
+
+            return Json(new { errors = ModelState.ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToArray()) });
         }
 
         // GET: Voitures/Delete/5
