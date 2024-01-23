@@ -1,0 +1,44 @@
+﻿@model Projet_Final.Areas.Identity.Data.ApplicationUtilisateur
+
+<h1>Détails de l'utilisateur</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Id :
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Id
+        </dd>
+
+        <dt class="col-sm-2">
+            Prénom :
+        </dt>
+        <dd class="col-sm-10">
+            @Model.FirstName
+        </dd>
+
+        <dt class="col-sm-2">
+            Nom de famille :
+        </dt>
+        <dd class="col-sm-10">
+            @Model.LastName
+        </dd>
+        <dt class="col-sm-2">
+            Adresse courriel :
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Email
+        </dd>
+
+        <dt class="col-sm-2">
+            Numéro de téléphone
+        </dt>
+        <dd class="col-sm-10">
+            @Model.PhoneNumber
+        </dd>
+    </dl>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.Id">Modifier</a>
+<a asp-action="Index">Retour à la liste des utilisateurs</a>

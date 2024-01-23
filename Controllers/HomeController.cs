@@ -10,17 +10,31 @@ namespace Projet_Final.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly UserManager<ApplicationUtilisateur> _userManager;
+        private readonly ApplicationDbContext _dbContext;
 
-        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUtilisateur> userManager)
+        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUtilisateur> userManager, ApplicationDbContext dbContext)
         {
             _logger = logger;
             this._userManager = userManager;
+            _dbContext = dbContext;
         }
 
         public IActionResult Index()
         {
-            ViewData["UtilisateurID"]=_userManager.GetUserId(this.User);
+            // Récupérez les données de la table Voitures
+            var voitures = _dbContext.Voitures.ToList();
+
+            // Passez les données de voiture et l'ID de l'utilisateur à la vue
+            ViewData["Voitures"] = voitures;
+            ViewData["UtilisateurID"] = _userManager.GetUserId(this.User);
+
             return View();
+        }
+
+        public IActionResult ListeModeles()
+        {
+            var voitures = _dbContext.Voitures.ToList();
+            return View(voitures);
         }
 
         public IActionResult Privacy()

@@ -180,11 +180,11 @@ namespace Projet_Final.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -303,6 +303,10 @@ namespace Projet_Final.Migrations
 
                     b.Property<bool>("EstDisponible")
                         .HasColumnType("bit");
+
+                    b.Property<string>("ImageVoiture")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Marque")
                         .IsRequired()

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Hosting;
 using Projet_Final.Areas.Identity.Data;
 using Projet_Final.Hubs;
 using Projet_Final.Models;
@@ -43,6 +44,7 @@ builder.Services.AddAuthentication().AddFacebook(opt =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddLogging();
 builder.Services.AddSignalR();
 
 builder.Services.Configure<IdentityOptions>(options =>
