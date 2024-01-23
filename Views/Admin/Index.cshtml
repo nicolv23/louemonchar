@@ -33,6 +33,7 @@
                 <td>@utilisateur.Email</td>
                 <td>@utilisateur.PhoneNumber</td>
                 <td>
+                    <a asp-action="Edit" asp-route-id="@utilisateur.Id">Modifier</a>
                     <a asp-action="Details" asp-route-id="@utilisateur.Id">Détails</a>
                     <!-- Vérification pour ne pas afficher le bouton "Effacer" si l'utilisateur est le compte Admin -->
                     @if (!User.IsInRole("Admin") || User.FindFirstValue(ClaimTypes.NameIdentifier) != utilisateur.Id)

@@ -147,7 +147,7 @@
                             <p>Prix : $@voiture.PrixJournalier</p>
                             <div class="button-container">
                                 <a href="@Url.Action("Details", "Voitures", new { id = voiture.Id })" class="btn btn-louer">Voir le modèle spécifique de voiture</a>
-                                <button class="btn btn-retour">Bouton 2</button>
+                                <a href="@Url.Action("Create", "Reservations", new { idVoiture = voiture.Id })" class="btn btn-retour">Réserver la voiture</a>
                             </div>
                         </div>
                     </div>
