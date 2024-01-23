@@ -73,14 +73,28 @@ namespace Projet_Final.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Marque,Modèle,Année,PrixJournalier,EstDisponible")] Voiture voiture)
+        public async Task<IActionResult> Create([Bind("Id,Marque,Modèle,Année,PrixJournalier,EstDisponible")] Voiture voiture, IFormFile imageVoiture)
         {
             if (ModelState.IsValid)
             {
+                if (imageVoiture != null && imageVoiture.Length > 0)
+                {
+                    var fileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(imageVoiture.FileName);
+
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await imageVoiture.CopyToAsync(fileStream);
+                    }
+                    voiture.ImageVoiture = "/images/voitures" + fileName; 
+                }
+
                 _context.Add(voiture);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(voiture);
         }
 
