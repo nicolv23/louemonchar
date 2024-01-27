@@ -5,9 +5,38 @@ namespace Projet_Final.Hubs
 {
     public class ChatHub : Hub
     {
-        public async Task SendMessage(string user, string message)
+        private static int utilisateursConnectes = 0;
+        private static List<string> messages = new List<string>();
+
+        public override async Task OnConnectedAsync()
         {
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            utilisateursConnectes++;
+            await Clients.Caller.SendAsync("UserConnected", utilisateursConnectes);
+
+            // Envoyer les messages précédents à l'utilisateur qui vient de se connecter
+            await Clients.Client(Context.ConnectionId).SendAsync("LoadPreviousMessages", messages);
+
+            await base.OnConnectedAsync();
+        }
+
+        public override async Task OnDisconnectedAsync(Exception exception)
+        {
+            utilisateursConnectes--;
+
+            // Envoyer le nombre d'utilisateurs connectés uniquement au client qui se déconnecte
+            await Clients.Client(Context.ConnectionId).SendAsync("UserConnected", utilisateursConnectes);
+
+            await base.OnDisconnectedAsync(exception);
+        }
+
+        public async Task SendMessage(string utilisateur, string message)
+        {
+            var timestamp = DateTime.UtcNow.ToString("o");
+            var formattedMessage = $"[{timestamp}] {utilisateur}: {message}";
+
+            messages.Add(formattedMessage);
+
+            await Clients.All.SendAsync("ReceiveMessage", utilisateur, message, timestamp, utilisateursConnectes);
         }
     }
 }

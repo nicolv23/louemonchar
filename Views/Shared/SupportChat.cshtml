@@ -2,27 +2,133 @@
     ViewData["Title"] = "Support Chat";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Bienvenue dans notre service de Support</h1>
-    <p>Si vous avez des questions, vous pouvez communiquer avec nous ici.</p>
-    <a class="btn btn-primary" asp-controller="Voitures" asp-action="Index">Voir les voitures disponibles</a>
-    <p>Utilisateur ID : @ViewData["UtilisateurID"]</p>
-</div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s ease;
+    }
+
+    .container {
+        max-width: 1000px; 
+        margin: auto;
+        margin-bottom: auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 40px;
+        height: 80vh; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-center {
+        margin-bottom: 20px; 
+        text-align: center; 
+    }
+
+    #discussion-container {
+        flex: 1;
+        overflow-y: auto;
+        max-height: calc(80vh - 250px);
+        padding: 10px;
+        margin-bottom: 10px; 
+    }
+
+    #discussion {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #discussion li {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 7px;
+            border-radius: 5px;
+        }
+
+    .old-message {
+        animation: fadeIn 0.5s ease;
+    }
+
+    .form-group {
+        margin-bottom: 20px; 
+    }
+
+    #message {
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #ced4da;
+        padding: 10px;
+    }
+
+    #sendmessage {
+        border-radius: 0 5px 5px 0;
+        background-color: #28a745;
+        color: #fff;
+        border: 1px solid #218838;
+    }
+
+        #sendmessage:hover {
+            background-color: #218838;
+        }
+
+    #connectedUsers {
+        margin-top: 20px; 
+        font-weight: bold;
+    }
+
+    .message-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #007bff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .new-message {
+        animation: fadeIn 0.5s ease;
+    }
+</style>
 
 <div class="container">
-    <div>
-        <label>Nom: </label>
-        <input type="text" id="displayname" />
+    <div class="text-center">
+        <h1 class="display-4">Bienvenue dans notre service de Support</h1>
+        <p>Si vous avez des questions, vous pouvez communiquer avec nous ici.</p>
+        <a class="btn btn-primary" asp-controller="Voitures" asp-action="Index">Voir les voitures disponibles</a>
+        <p>Utilisateurs en ligne : <span id="connectedUsers">0</span></p>       
     </div>
 
-    <div class="mt-5">
-        <input type="text" id="message" />
-        <input type="button" id="sendmessage" value="Send" />
+    <div class="form-group">
+        <label for="displayname">Nom:</label>
+        <input type="text" id="displayname" class="form-control" />
     </div>
 
-    <div class="mt-3">
-        <ul id="discussion"></ul>
+    <div class="input-group">
+        <input type="text" id="message" class="form-control" placeholder="Entrez votre message..." />
+        <div class="input-group-append">
+            <button id="sendmessage" class="btn btn-primary">Envoyer</button>
+        </div>
     </div>
+
+    <div id="discussion-container">
+        <ul id="discussion" class="list-unstyled"></ul>
+    </div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/signalr@7.0.2/dist/browser/signalr.min.js"></script>
@@ -33,22 +139,59 @@
         return console.error(err.toString());
     });
 
+    connection.on("LoadPreviousMessages", function (messages) {
+        var discussionList = document.getElementById("discussion");
+
+        messages.forEach(function (message) {
+            var li = document.createElement("li");
+            li.innerHTML = message;
+            li.classList.add("old-message");
+            discussionList.appendChild(li);
+        });
+    });
+
     document.getElementById("sendmessage").addEventListener("click", function (event) {
         var user = document.getElementById("displayname").value;
-        var message = document.getElementById("message").value;
+        var messageInput = document.getElementById("message");
+        var message = messageInput.value.trim();
 
-        connection.invoke("SendMessage", user, message).catch(function (err) {
-            return console.error(err.toString());
-        });
+        if (user && message) {
+            connection.invoke("SendMessage", user, message).catch(function (err) {
+                return console.error(err.toString());
+            });
+
+            messageInput.value = '';
+        }
 
         event.preventDefault();
     });
 
-    connection.on("ReceiveMessage", function (user, message) {
-        var encodedMsg = user + ": " + message;
+    connection.on("ReceiveMessage", function (user, message, timestamp, connectedUsers) {
+        var date = new Date(timestamp);
+        var formattedTime = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+        var isImage = /\.(jpeg|jpg|gif|png)$/.test(message.toLowerCase());
+        var content = isImage ? `<img src="${message}" alt="Image" style="max-width:100%; max-height:100%;">` : message;
+
+        var encodedMsg = user + ": " + content + " (" + formattedTime + ")";
         var li = document.createElement("li");
 
-        li.textContent = encodedMsg;
+        var avatar = document.createElement("div");
+        avatar.classList.add("user-avatar");
+        avatar.textContent = user.charAt(0);
+
+        li.appendChild(avatar);
+        li.innerHTML += "<span>" + encodedMsg + "</span>";
+
+        li.classList.add("message-container");
+        li.classList.add("new-message");
+
         document.getElementById("discussion").appendChild(li);
+
+        document.getElementById("connectedUsers").textContent = connectedUsers;
+
+        var discussionContainer = document.getElementById("discussion-container");
+        discussionContainer.scrollTop = discussionContainer.scrollHeight;
     });
+
 </script>
