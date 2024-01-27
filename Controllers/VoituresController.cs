@@ -66,6 +66,19 @@ namespace Projet_Final.Controllers
             return View(voiture);
         }
 
+        [HttpGet]
+        public IActionResult GetDetails(int id)
+        {
+            var voiture = _context.Voitures.FirstOrDefault(v => v.Id == id);
+
+            if (voiture == null)
+            {
+                return NotFound();
+            }
+
+            return Json(new { Marque = voiture.Marque, Modele = voiture.Modèle });
+        }
+
         // GET: Voitures/Create
         public IActionResult Create()
         {
@@ -85,7 +98,6 @@ namespace Projet_Final.Controllers
                 {
                     if (imageVoiture != null && imageVoiture.Length > 0)
                     {
-                        // Vérifier l'extension du fichier
                         var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
                         var fileExtension = Path.GetExtension(imageVoiture.FileName).ToLower();
 
@@ -96,38 +108,27 @@ namespace Projet_Final.Controllers
                         }
 
                         var fileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(imageVoiture.FileName);
-
-                        // Utilisez Path.Combine pour construire le chemin du fichier correctement
                         var filePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", "voitures", fileName);
 
                         using (var fileStream = new FileStream(filePath, FileMode.Create))
                         {
-                            _logger.LogInformation("Avant la copie du fichier");
                             await imageVoiture.CopyToAsync(fileStream);
-                            _logger.LogInformation("Après la copie du fichier");
                         }
 
-
-                        voiture.ImageVoiture = Path.Combine("images", "voitures", fileName); 
-
-                        _logger.LogInformation("Image téléchargée avec succès");
+                        voiture.ImageVoiture = Path.Combine("images", "voitures", fileName);
                     }
 
                     _context.Add(voiture);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+
+                    return Json(new { redirectUrl = Url.Action("Index") });
+                    var errors = ModelState.ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToArray());
+                    return Json(new { errors });
                 }
-                catch (IOException ioEx)
+                catch (Exception ex)
                 {
-                    _logger.LogError(ioEx, "Erreur d'entrée/sortie lors de la copie du fichier");
-                    ModelState.AddModelError(string.Empty, "Erreur d'entrée/sortie lors de la copie du fichier.");
-                    return View(voiture);
-                }
-                catch (UnauthorizedAccessException authEx)
-                {
-                    _logger.LogError(authEx, "Erreur d'autorisation lors de la copie du fichier");
-                    ModelState.AddModelError(string.Empty, "Erreur d'autorisation lors de la copie du fichier.");
-                    return View(voiture);
+                    _logger.LogError(ex, "Erreur lors de la sauvegarde de la voiture");
+                    ModelState.AddModelError(string.Empty, "Une erreur s'est produite lors de la sauvegarde de la voiture.");
                 }
             }
 
