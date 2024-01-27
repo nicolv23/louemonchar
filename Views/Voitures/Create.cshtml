@@ -42,6 +42,7 @@
                 <input type="file" name="ImageVoiture" class="form-control" required accept=".jpg, .jpeg, .png, .gif" />
                 <span asp-validation-for="ImageVoiture" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Créer" class="btn btn-primary" />
             </div>
@@ -57,35 +58,36 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-            integrity="sha256-oP6HI/tZ1ZkAitQZgO8rO4rZ5DZg26enJh14CUL5my4="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script>
         $(document).ready(function () {
             $('form').submit(function (event) {
-                event.preventDefault(); // Empêcher la soumission normale du formulaire
+                event.preventDefault();
+
+                var formData = new FormData(this);
 
                 $.ajax({
-                    url: $(this).attr('action'),
-                    type: $(this).attr('method'),
-                    data: new FormData(this),
+                    url: '@Url.Action("Create", "VoituresController")',
+                    type: 'POST',
+                    data: formData,
                     contentType: false,
                     processData: false,
                     success: function (data) {
-                        // La requête a réussi, vous pouvez effectuer des actions supplémentaires si nécessaire
-                        window.location.href = data.redirectUrl; // Rediriger vers une autre page si nécessaire
+                        if (data.redirectUrl) {
+                            window.location.href = data.redirectUrl;
+                        } else {
+                            alert('La redirection après la sauvegarde a échoué.');
+                        }
                     },
                     error: function (xhr, status, error) {
-                        // La requête a échoué, afficher les erreurs
                         var jsonResponse = xhr.responseJSON;
                         if (jsonResponse && jsonResponse.errors) {
-                            // Afficher les messages d'erreur côté client
-                            $.each(jsonResponse.errors, function (key, value) {
-                                $('[name="' + key + '"]').siblings('.text-danger').text(value);
-                            });
+                            var errorMessages = Object.values(jsonResponse.errors).flat().join('\n');
+                            alert('Erreurs lors de la soumission du formulaire:\n' + errorMessages);
+                        } else if (jsonResponse && jsonResponse.error) {
+                            alert(jsonResponse.error);
                         } else {
-                            // Afficher une erreur générique
                             alert('Une erreur s\'est produite lors de la soumission du formulaire.');
                         }
                     }
