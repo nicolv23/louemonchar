@@ -23,11 +23,12 @@ namespace Projet_Final.Hubs
         {
             utilisateursConnectes--;
 
-            // Envoyer le nombre d'utilisateurs connectés uniquement au client qui se déconnecte
-            await Clients.Client(Context.ConnectionId).SendAsync("UserConnected", utilisateursConnectes);
+            // Envoyer le nombre d'utilisateurs connectés à tous les clients
+            await Clients.All.SendAsync("UserConnected", utilisateursConnectes);
 
             await base.OnDisconnectedAsync(exception);
         }
+
 
         public async Task SendMessage(string utilisateur, string message)
         {

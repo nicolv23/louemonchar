@@ -121,9 +121,7 @@ namespace Projet_Final.Controllers
                     _context.Add(voiture);
                     await _context.SaveChangesAsync();
 
-                    return Json(new { redirectUrl = Url.Action("Index") });
-                    var errors = ModelState.ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToArray());
-                    return Json(new { errors });
+                    return Json(new { redirectUrl = Url.Action("Index") });                   
                 }
                 catch (Exception ex)
                 {
@@ -132,7 +130,9 @@ namespace Projet_Final.Controllers
                 }
             }
 
-            return View(voiture);
+            // Si ModelState.IsValid n'est pas vrai ou s'il y a une exception, retournez les erreurs
+            var errors = ModelState.ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Errors.Select(e => e.ErrorMessage).ToArray());
+            return Json(new { errors });
         }
 
         // GET: Voitures/Edit/5

@@ -68,12 +68,13 @@
                 var formData = new FormData(this);
 
                 $.ajax({
-                    url: '@Url.Action("Create", "VoituresController")',
+                    url: '@Url.Action("Create", "Voitures")',
                     type: 'POST',
                     data: formData,
                     contentType: false,
                     processData: false,
                     success: function (data) {
+                        console.log(data);
                         if (data.redirectUrl) {
                             window.location.href = data.redirectUrl;
                         } else {

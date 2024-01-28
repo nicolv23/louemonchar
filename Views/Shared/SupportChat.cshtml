@@ -109,7 +109,7 @@
     <div class="text-center">
         <h1 class="display-4">Bienvenue dans notre service de Support</h1>
         <p>Si vous avez des questions, vous pouvez communiquer avec nous ici.</p>
-        <a class="btn btn-primary" asp-controller="Voitures" asp-action="Index">Voir les voitures disponibles</a>
+        <a class="btn btn-primary" asp-controller="Home" asp-action="ListeModeles">Voir les voitures disponibles</a>
         <p>Utilisateurs en ligne : <span id="connectedUsers">0</span></p>
     </div>
 
@@ -137,6 +137,11 @@
 
     connection.start().catch(function (err) {
         return console.error(err.toString());
+    });
+
+    connection.on("UserConnected", function (connectedUsers) {
+        // Mettre à jour le nombre d'utilisateurs en ligne
+        document.getElementById("connectedUsers").textContent = connectedUsers;
     });
 
     connection.on("LoadPreviousMessages", function (messages) {
