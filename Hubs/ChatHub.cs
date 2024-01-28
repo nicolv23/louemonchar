@@ -38,5 +38,20 @@ namespace Projet_Final.Hubs
 
             await Clients.All.SendAsync("ReceiveMessage", utilisateur, message, timestamp, utilisateursConnectes);
         }
+
+        private string FormatMessage(string message)
+        {
+            // Extraire la date du message existant
+            var dateIndex = message.IndexOf('[') + 1;
+            var dateString = message.Substring(dateIndex, message.IndexOf(']') - dateIndex);
+
+            // Parser la date et la reformater
+            if (DateTime.TryParse(dateString, out DateTime originalDate))
+            {
+                return message.Replace(dateString, originalDate.ToString("yyyy/MM/dd"));
+            }
+
+            return message;
+        }
     }
 }
