@@ -12,7 +12,7 @@
     }
 
     .container {
-        max-width: 1000px; 
+        max-width: 1000px;
         margin: auto;
         margin-bottom: auto;
         padding: 20px;
@@ -20,14 +20,14 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         margin-top: 40px;
-        height: 80vh; 
+        height: 80vh;
         display: flex;
         flex-direction: column;
     }
 
     .text-center {
-        margin-bottom: 20px; 
-        text-align: center; 
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     #discussion-container {
@@ -35,7 +35,7 @@
         overflow-y: auto;
         max-height: calc(80vh - 250px);
         padding: 10px;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
 
     #discussion {
@@ -57,7 +57,7 @@
     }
 
     .form-group {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 
     #message {
@@ -78,7 +78,7 @@
         }
 
     #connectedUsers {
-        margin-top: 20px; 
+        margin-top: 20px;
         font-weight: bold;
     }
 
@@ -110,7 +110,7 @@
         <h1 class="display-4">Bienvenue dans notre service de Support</h1>
         <p>Si vous avez des questions, vous pouvez communiquer avec nous ici.</p>
         <a class="btn btn-primary" asp-controller="Voitures" asp-action="Index">Voir les voitures disponibles</a>
-        <p>Utilisateurs en ligne : <span id="connectedUsers">0</span></p>       
+        <p>Utilisateurs en ligne : <span id="connectedUsers">0</span></p>
     </div>
 
     <div class="form-group">
@@ -144,11 +144,31 @@
 
         messages.forEach(function (message) {
             var li = document.createElement("li");
-            li.innerHTML = message;
+            li.innerHTML = formatMessage(message);
             li.classList.add("old-message");
             discussionList.appendChild(li);
         });
     });
+
+    function formatMessage(message) {
+        // Extraire la date du message existant
+        var dateIndex = message.indexOf('[') + 1;
+        var dateString = message.substring(dateIndex, message.indexOf(']') - dateIndex);
+
+        // Parser la date et la reformater en utilisant Intl.DateTimeFormat
+        var originalDate = new Date(dateString);
+
+        // Convertir la date locale
+        var formattedDate = originalDate.toLocaleString('fr-CA', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit'
+        });
+
+        return message.replace(dateString, formattedDate);
+    }
+
+
 
     document.getElementById("sendmessage").addEventListener("click", function (event) {
         var user = document.getElementById("displayname").value;
