@@ -1,4 +1,4 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "Support Chat";
 }
 
@@ -9,18 +9,20 @@
         margin: 0;
         padding: 0;
         transition: background-color 0.3s ease;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
     }
 
     .container {
+        flex: 1;
         max-width: 1000px;
         margin: auto;
-        margin-bottom: auto;
         padding: 20px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
         margin-top: 40px;
-        height: 80vh;
         display: flex;
         flex-direction: column;
     }
@@ -33,7 +35,7 @@
     #discussion-container {
         flex: 1;
         overflow-y: auto;
-        max-height: calc(80vh - 250px);
+        max-height: 60vh; /* Adjusted height to fit within the viewport */
         padding: 10px;
         margin-bottom: 10px;
     }
@@ -103,7 +105,15 @@
     .new-message {
         animation: fadeIn 0.5s ease;
     }
+
+    footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
 </style>
+
 
 <div class="container">
     <div class="text-center">
