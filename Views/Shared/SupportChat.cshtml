@@ -133,6 +133,9 @@
         <div class="input-group-append">
             <button id="sendmessage" class="btn btn-primary">Envoyer</button>
         </div>
+        <audio id="notificationSound">
+            <source src="/son/notification.mp3" type="audio/mpeg">         
+        </audio>
     </div>
 
     <div id="discussion-container">
@@ -143,17 +146,21 @@
 
 <script src="https://cdn.jsdelivr.net/npm/signalr@7.0.2/dist/browser/signalr.min.js"></script>
 <script>
+    // Définir la connexion SignalR
     var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
 
+    // Démarrer la connexion
     connection.start().catch(function (err) {
         return console.error(err.toString());
     });
 
+    // Gérer l'événement "UserConnected"
     connection.on("UserConnected", function (connectedUsers) {
         // Mettre à jour le nombre d'utilisateurs en ligne
         document.getElementById("connectedUsers").textContent = connectedUsers;
     });
 
+    // Gérer l'événement "LoadPreviousMessages"
     connection.on("LoadPreviousMessages", function (messages) {
         var discussionList = document.getElementById("discussion");
 
@@ -165,6 +172,7 @@
         });
     });
 
+    // Fonction pour formater le message
     function formatMessage(message) {
         // Extraire la date du message existant
         var dateIndex = message.indexOf('[') + 1;
@@ -183,25 +191,13 @@
         return message.replace(dateString, formattedDate);
     }
 
-
-
-    document.getElementById("sendmessage").addEventListener("click", function (event) {
-        var user = document.getElementById("displayname").value;
-        var messageInput = document.getElementById("message");
-        var message = messageInput.value.trim();
-
-        if (user && message) {
-            connection.invoke("SendMessage", user, message).catch(function (err) {
-                return console.error(err.toString());
-            });
-
-            messageInput.value = '';
-        }
-
-        event.preventDefault();
-    });
-
+    // Gérer l'événement "ReceiveMessage"
     connection.on("ReceiveMessage", function (user, message, timestamp, connectedUsers) {
+        // Jouer le son de notification lors de la réception d'un message
+        var notificationSound = document.getElementById("notificationSound");
+        notificationSound.play();
+
+        // Créer l'élément de message
         var date = new Date(timestamp);
         var formattedTime = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
@@ -221,12 +217,37 @@
         li.classList.add("message-container");
         li.classList.add("new-message");
 
+        // Ajouter le message à la discussion
         document.getElementById("discussion").appendChild(li);
 
+        // Mettre à jour le nombre d'utilisateurs en ligne
         document.getElementById("connectedUsers").textContent = connectedUsers;
 
+        // Faire défiler la discussion vers le bas pour afficher le dernier message
         var discussionContainer = document.getElementById("discussion-container");
         discussionContainer.scrollTop = discussionContainer.scrollHeight;
+    });
+
+    // Gérer l'événement "click" sur le bouton "Envoyer"
+    document.getElementById("sendmessage").addEventListener("click", function (event) {
+        // Récupérer le nom de l'utilisateur et le message
+        var user = document.getElementById("displayname").value;
+        var messageInput = document.getElementById("message");
+        var message = messageInput.value.trim();
+
+        // Vérifier si l'utilisateur et le message sont valides
+        if (user && message) {
+            // Envoyer le message via la connexion SignalR
+            connection.invoke("SendMessage", user, message).catch(function (err) {
+                return console.error(err.toString());
+            });
+
+            // Effacer le champ de saisie du message après l'envoi
+            messageInput.value = '';
+        }
+
+        // Empêcher le comportement par défaut du bouton
+        event.preventDefault();
     });
 
 </script>
