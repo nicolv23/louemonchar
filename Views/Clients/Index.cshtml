@@ -7,64 +7,53 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Liste Clients</h1>
-@if (SignInManager.IsSignedIn(User))
-{
-    var user = await UserManager.GetUserAsync(User);
-    if (await UserManager.IsInRoleAsync(user, "Admin"))
+<div class="container">
+    <h1 class="mt-5 mb-4">Liste Clients</h1>
+
+    @if (SignInManager.IsSignedIn(User))
     {
-        <p>
-            <a asp-action="Create">Créer nouveau client</a>
-        </p>
+        var user = await UserManager.GetUserAsync(User);
+        if (await UserManager.IsInRoleAsync(user, "Admin"))
+        {
+            <p>
+                <a class="btn btn-primary" asp-action="Create">Créer nouveau client</a>
+            </p>
+        }
     }
-}
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nom)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Prénom)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Adresse)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NuméroTéléphone)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Prénom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Adresse)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NuméroTéléphone)
-            </td>
-            
-            @if (SignInManager.IsSignedIn(User))
+
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Nom)</th>
+                <th>@Html.DisplayNameFor(model => model.Prénom)</th>
+                <th>@Html.DisplayNameFor(model => model.Adresse)</th>
+                <th>@Html.DisplayNameFor(model => model.NuméroTéléphone)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
             {
-            var user = await UserManager.GetUserAsync(User);
-            if (await UserManager.IsInRoleAsync(user, "Admin"))
-                {
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a> |
-                    <a asp-action="Details" asp-route-id="@item.ClientId">Détails</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
-                </td>
-                }
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Nom)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Prénom)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Adresse)</td>
+                    <td>@Html.DisplayFor(modelItem => item.NuméroTéléphone)</td>
+
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        var user = await UserManager.GetUserAsync(User);
+                        if (await UserManager.IsInRoleAsync(user, "Admin"))
+                        {
+                            <td>
+                                <a class="btn btn-info btn-sm" asp-action="Edit" asp-route-id="@item.ClientId">Modifier</a>
+                                <a class="btn btn-secondary btn-sm" asp-action="Details" asp-route-id="@item.ClientId">Détails</a>
+                                <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.ClientId">Supprimer</a>
+                            </td>
+                        }
+                    }
+                </tr>
             }
-        </tr>
-}
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</div>

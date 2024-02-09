@@ -54,5 +54,42 @@ namespace Projet_Final.Hubs
 
             return message;
         }
+
+        private bool verifierMessage(string message)
+        {
+            List<string> motsIndesirables = new List<string> { "pute", "merde", "salope", "fuck you", "bitch", "con", "criss" };
+
+            foreach (var mot in motsIndesirables)
+            {
+                if (message.Contains(mot, StringComparison.OrdinalIgnoreCase))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public async Task DeleteMessage(string user, string message, DateTime timestamp)
+        {
+            var userIdIndex = message.IndexOf("[UserId:");
+            if (userIdIndex >= 0)
+            {
+                var userIdEndIndex = message.IndexOf("]", userIdIndex);
+                if (userIdEndIndex >= 0)
+                {
+                    var userId = message.Substring(userIdIndex + "[UserId:".Length, userIdEndIndex - userIdIndex - "[UserId:".Length);
+
+                    // Supprimer le message uniquement si l'ID utilisateur correspond à l'ID actuel
+                    if (userId == Context.ConnectionId)
+                    {
+                        var formattedMessage = $"{user}: {message} [{timestamp}]";
+                        messages.Remove(formattedMessage);
+
+                        await Clients.All.SendAsync("DeleteMessage", user, message, timestamp, utilisateursConnectes);
+                    }
+                }
+            }
+        }
     }
 }

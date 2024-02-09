@@ -1,7 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     <div class="container">
         <div class="row">
             <div class="col-12 mt-4">
@@ -14,38 +11,21 @@
                     <div class="card-body border p-0">
                         <p>
                             <a class="btn btn-primary w-100 h-100 d-flex align-items-center justify-content-between"
-                               data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
-                               aria-controls="collapseExample">
+                               data-bs-toggle="collapse" href="#paypalCollapse" role="button" aria-expanded="true"
+                               aria-controls="paypalCollapse">
                                 <span class="fw-bold">PayPal</span>
-                                <span class="fab fa-cc-paypal">
-                                </span>
+                                <span class="fab fa-cc-paypal"></span>
                             </a>
                         </p>
-                        <div class="collapse p-3 pt-0" id="collapseExample">
-                            <div class="row">
-                                <div class="col-8">
-                                    <p class="h4 mb-0">Sommaire</p>
-                                    <p class="mb-0">
-                                        <span class="fw-bold">Produit:</span><span class="c-green">
-                                            : Name of
-                                            product
-                                        </span>
-                                    </p>
-                                    <p class="mb-0">
-                                        <span class="fw-bold">Prix:</span><span class="c-green">:$452.90</span>
-                                    </p>
-                                    <p class="mb-0">
-                                        Veuillez utiliser votre compte paypal pour finaliser la transaction.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="collapse p-3 pt-0" id="paypalCollapse">
+                            <!-- Contenu spécifique à PayPal -->
                         </div>
                     </div>
                     <div class="card-body border p-0">
                         <p>
                             <a class="btn btn-primary p-2 w-100 h-100 d-flex align-items-center justify-content-between"
-                               data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
-                               aria-controls="collapseExample">
+                               data-bs-toggle="collapse" href="#creditCardCollapse" role="button" aria-expanded="true"
+                               aria-controls="creditCardCollapse">
                                 <span class="fw-bold">Carte de Crédit</span>
                                 <span class="">
                                     <span class="fab fa-cc-amex"></span>
@@ -54,56 +34,18 @@
                                 </span>
                             </a>
                         </p>
-                        <div class="collapse show p-3 pt-0" id="collapseExample">
+                        <div class="collapse show p-3 pt-0" id="creditCardCollapse">
+                            <!-- Contenu spécifique à la Carte de Crédit -->
                             <div class="row">
                                 <div class="col-lg-5 mb-lg-0 mb-3">
-                                    <p class="h4 mb-0">Sommaire</p>
-                                    <p class="mb-0">
-                                        <span class="fw-bold">Produit:</span><span class="c-green">
-                                            : Nom du Produit
-                                        </span>
-                                    </p>
-                                    <p class="mb-0">
-                                        <span class="fw-bold">Prix:</span>
-                                        <span class="c-green">:$452.90</span>
-                                    </p>
-                                    <p class="mb-0">
-                                       
-                                        Veuillez entrer vos informations de paiement pour finaliser la transaction.
-                                    </p>
+                                    <!-- ... -->
                                 </div>
                                 <div class="col-lg-7">
-                                    <form action="" class="form">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="form__div">
-                                                    <input type="text" class="form-control" placeholder=" ">
-                                                    <label for="" class="form__label">Numero de Carte</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="form__div">
-                                                    <input type="text" class="form-control" placeholder=" ">
-                                                    <label for="" class="form__label">MM / yy</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="form__div">
-                                                    <input type="password" class="form-control" placeholder=" ">
-                                                    <label for="" class="form__label">Code CVV</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form__div">
-                                                    <input type="text" class="form-control" placeholder=" ">
-                                                    <label for="" class="form__label">Nom sur la carte</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="btn btn-primary w-100">Soumettre</div>
-                                            </div>
+                                    <form action="/votre-endpoint-de-paiement" method="post" class="form">
+                                        <!-- Formulaire de paiement avec Stripe ou tout autre service de paiement -->
+                                        <!-- ... -->
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary w-100">Soumettre</button>
                                         </div>
                                     </form>
                                 </div>
@@ -113,11 +55,11 @@
                 </div>
             </div>
             <div class="col-12">
+                <!-- Bouton global pour effectuer le paiement -->
                 <div class="btn btn-primary payment">
                     Faire Paiement
                 </div>
             </div>
         </div>
     </div>
-
 }

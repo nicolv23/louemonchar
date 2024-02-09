@@ -98,6 +98,24 @@ namespace Projet_Final.Models
                     PrixJournalier = 600.00m,
                     EstDisponible = true,
                     ImageVoiture = "~/images/voitures/ferrari_488gtb.jpg"
+                },
+                new Voiture
+                {
+                    Marque = "Nissan",
+                    Modèle = "GT-R",
+                    Année = 2020,
+                    PrixJournalier = 205.00m,
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/nissan_gtr.jpg"
+                },
+                new Voiture
+                {
+                    Marque = "Nissan",
+                    Modèle = "Sentra",
+                    Année = 2024,
+                    PrixJournalier = 120.00m,
+                    EstDisponible = true,
+                    ImageVoiture = "~/images/voitures/nissan_sentra.jpg"
                 }
             };
         }

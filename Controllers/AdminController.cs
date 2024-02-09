@@ -10,10 +10,12 @@ namespace Projet_Final.Controllers
     public class AdminController : Controller
     {
         private readonly UserManager<ApplicationUtilisateur> _userManager;
+        private readonly SignInManager<ApplicationUtilisateur> _signInManager;
 
-        public AdminController(UserManager<ApplicationUtilisateur> userManager)
+        public AdminController(UserManager<ApplicationUtilisateur> userManager, SignInManager<ApplicationUtilisateur> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         [HttpGet]
@@ -167,5 +169,83 @@ namespace Projet_Final.Controllers
 
             return View(utilisateur);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Verrouiller(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var utilisateur = await _userManager.FindByIdAsync(id);
+
+            if (utilisateur == null)
+            {
+                return NotFound();
+            }
+
+            return View(utilisateur);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> VerrouillerConfirme(string id)
+        {
+            var utilisateur = await _userManager.FindByIdAsync(id);
+
+            if (utilisateur == null)
+            {
+                return NotFound();
+            }
+
+            utilisateur.LockoutEnd = DateTimeOffset.MaxValue;
+
+            var result = await _userManager.UpdateAsync(utilisateur);
+
+            if (result.Succeeded)
+            {
+                // Facultatif : déconnecter l'utilisateur verrouillé
+                await _signInManager.SignOutAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return View(utilisateur);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Deverrouiller(string id)
+        {
+            var utilisateur = await _userManager.FindByIdAsync(id);
+
+            if (utilisateur == null)
+            {
+                return NotFound();
+            }
+
+            utilisateur.LockoutEnd = null;
+
+            var result = await _userManager.UpdateAsync(utilisateur);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return View(utilisateur);
+        }
+
     }
 }

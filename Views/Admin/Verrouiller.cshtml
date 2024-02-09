@@ -1,0 +1,53 @@
+﻿@model Projet_Final.Areas.Identity.Data.ApplicationUtilisateur
+
+@{
+    ViewData["Title"] = "Verrouiller Utilisateur";
+}
+
+<h2>Verrouiller Utilisateur</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <!-- Ajoutez d'autres propriétés à afficher selon vos besoins -->
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+    </dl>
+
+    <form asp-action="VerrouillerConfirme" asp-route-id="@Model.Id" method="post">
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <input type="submit" value="Verrouiller le compte" class="btn btn-danger" />
+        </div>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index">Retour à la liste des utilisateurs</a>
+</div>

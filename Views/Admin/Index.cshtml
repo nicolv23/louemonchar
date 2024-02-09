@@ -35,12 +35,25 @@
                 <td>
                     <a asp-action="Edit" asp-route-id="@utilisateur.Id">Modifier</a>
                     <a asp-action="Details" asp-route-id="@utilisateur.Id">Détails</a>
-                    <!-- Vérification pour ne pas afficher le bouton "Effacer" si l'utilisateur est le compte Admin -->
+                    <!-- Vérification pour ne pas afficher les boutons "Effacer" et "Verrouiller/Déverrouiller" si l'utilisateur est le compte Admin -->
                     @if (!User.IsInRole("Admin") || User.FindFirstValue(ClaimTypes.NameIdentifier) != utilisateur.Id)
                     {
                         <form asp-action="Delete" asp-route-id="@utilisateur.Id" method="post" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?');">
                             <button type="submit">Effacer</button>
                         </form>
+
+                        @if (utilisateur.LockoutEnd == null)
+                        {
+                            <form asp-action="Verrouiller" asp-route-id="@utilisateur.Id" method="get">
+                                <button type="submit">Verrouiller</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form asp-action="Deverrouiller" asp-route-id="@utilisateur.Id" method="post">
+                                <button type="submit">Déverrouiller</button>
+                            </form>
+                        }
                     }
                 </td>
             </tr>
